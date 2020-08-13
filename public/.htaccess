@@ -36,5 +36,5 @@ Redirect 301 /ucbad https://ucbad.com/
 Redirect 301 /ijepem https://ijepem.com/
 
 RewriteRule ^sitemap(.*?).xml$ https://api.ijepem.com/sitemap/sitemap$1.xml [p,l,E=Proxy-Host:api.ijepem.com]
-RewriteRule (.*) http://127.0.0.1:7424/$1 [p]
+RewriteRule (.*) http://127.0.0.1:7425/$1 [p]
 
