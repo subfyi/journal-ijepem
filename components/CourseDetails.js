@@ -14,7 +14,7 @@ const CourseDetails = (props) => {
 
                             <div className="course-details__top">
                                 <div className="course-details__top-left">
-                                    <h2 className="course-details__title">{articles.tr_title}
+                                    <h2 className="course-details__title">{articles.en_title}
                                     </h2>
                                 </div>
                             </div>
@@ -109,7 +109,7 @@ const CourseDetails = (props) => {
                                 <p>
                                     {articles.authors.map((authorin, i, arr) =>
                                         <>{authorin.author.first_name} {authorin.author.middle_name} {authorin.author.last_name}{i != (arr.length-1) ? ', ' : ''}</>
-                                    )}. ({moment(articles.pubdate).format("YYYY")}). {articles.tr_title}. Ulusal Çevre Bilimleri Araştırma
+                                    )}. ({moment(articles.pubdate).format("YYYY")}). {articles.en_title}. Ulusal Çevre Bilimleri Araştırma
                                     Dergisi, {volume + " ( " + issue + " ) "}, {articles.first_page}-{articles.last_page}.
                                     {" "}{"http://ijepem.com/volume/" + volume + "/issue/" + issue + "/article/" + article}
                                 </p>
@@ -123,7 +123,7 @@ const CourseDetails = (props) => {
                                     Citation type: <span>BibTex</span>
                                 </a>
                                 <p>
-                                    @article{"{"}{moment(articles.pubdate).format("YYYY")}, title={"{"}{articles.tr_title}{"}"}, volume={"{"}{volume}{"}"}, number={"{"}{issue}{"}"},
+                                    @article{"{"}{moment(articles.pubdate).format("YYYY")}, title={"{"}{articles.en_title}{"}"}, volume={"{"}{volume}{"}"}, number={"{"}{issue}{"}"},
                                     publisher={"{"}International Journal of Environmental Pollution and Environmental Modelling{"}"}, author={"{"}{articles.authors.map((authorin, i, arr) =>
                                     <>{authorin.author.first_name} {authorin.author.middle_name} {authorin.author.last_name}{i != (arr.length-1) ? ', ' : ''}</>
                                 )}{"}"}, year={"{"}{moment(articles.pubdate).format("YYYY")}{"}"}, pages={"{"}{articles.first_page}-{articles.last_page}{"}"} {"}"}
@@ -140,7 +140,7 @@ const CourseDetails = (props) => {
                                 <p>
                                     {articles.authors.map((authorin, i, arr) =>
                                         <>{authorin.author.first_name} {authorin.author.middle_name} {authorin.author.last_name}{i != (arr.length-1) ? ', ' : ''}</>
-                                    )}. {articles.tr_title}. no. {volume} International Journal of Environmental Pollution and Environmental Modelling, ({moment(articles.pubdate).format("YYYY")}),
+                                    )}. {articles.en_title}. no. {volume} International Journal of Environmental Pollution and Environmental Modelling, ({moment(articles.pubdate).format("YYYY")}),
                                     pp. {articles.first_page}-{articles.last_page}.
 
                                 </p>
