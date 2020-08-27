@@ -7,13 +7,13 @@ const Teachers = () => {
                 <div className="row justify-content-between">
                     <div className="col-lg-12">
                         <div className="team-details__content">
-                            <h3 className="team-details__subtitle">Amaç ve Kapsam</h3>
+                            <h3 className="team-details__subtitle">Aim and Scope</h3>
                             <p>
                                 International Journal of Environmental Pollution and Environmental Modelling is an international journal that publishes reviewed original research papers of both experimental and theoretical nature in the following areas:
 
                             </p>
                             <hr/>
-                            <h3 className="team-details__subtitle">Kapsam</h3>
+                            <h3 className="team-details__subtitle">Subjects</h3>
                             <ul>
                                 <li>
                                     Municipal and Industrial Solid Wastes and Waste Disposal, Management</li><li>

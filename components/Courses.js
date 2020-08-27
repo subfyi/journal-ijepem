@@ -12,7 +12,7 @@ const Courses = (props) => {
                             <Link href={"/volume/" + row.volume + "/issue/" + row.issue}><a>
                                 <div className="course-one__single">
                                     <div className="course-one__image">
-                                        <img src={"https://ijepem.com/doc/ijepem-"+ moment(row.year).format("YY") +"-0" + row.issue + "-00-00.png"} alt=""/>
+                                        <img src={"/doc/ijepem-"+ moment(row.year).format("YY") +"-0" + row.issue + "-00-00.png"} alt=""/>
                                     </div>
                                     <div className="course-one__content">
                                         <a href="#" className="course-one__category">{moment(row.year).format("YYYY")}</a>

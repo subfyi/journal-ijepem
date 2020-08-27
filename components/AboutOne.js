@@ -32,7 +32,7 @@ class AboutOne extends Component {
                             Journal welcomes the high-quality papers. Original research papers, state-of-the-art reviews and high quality technical notes are invited for publication.
 
                         </p>
-                        <a href="https://dergipark.org.tr/tr/journal/2662/submission/step/manuscript/new" className="thm-btn about-one__btn">Send Paper</a>
+                        <a href="https://dergipark.org.tr/en/journal/2661/submission/step/manuscript/new" className="thm-btn about-one__btn">Send Paper</a>
                     </div>
             </section>
         );
