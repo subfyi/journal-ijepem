@@ -25,8 +25,8 @@ const Layout = (props) => {
                     <link rel="schema.DC" href="https://purl.org/dc/elements/1.1/"/>
 
                     {articles.authors.map((authorin, index) =>
-                        <meta name="DC.Creator.PersonalName"
-                              content={authorin.author.first_name + " " + (authorin.author.middle_name && (authorin.author.middle_name + " ")) + authorin.author.last_name}/>
+                        <meta name={"DC.Creator.PersonalName."+(index+1)}
+                              content={authorin.author.first_name + " " + ((authorin.author.middle_name && (authorin.author.middle_name + " ")) || "") + authorin.author.last_name}/>
                     )}
 
                     <meta name="DC.Date.created"
@@ -78,7 +78,7 @@ const Layout = (props) => {
                     <meta
                         name="DC.Subject"
                         xmlLang="en"
-                        content={(articles.keywords).filter(a => a.keyword.type == "en").map(a => <>{a.keyword.value}, </>)}
+                        content={(articles.keywords).filter(a => a.keyword.type == "tr").map(a => a.keyword.value).join(", ")}
                     />
 
                     <meta name="DC.Title"
@@ -99,7 +99,7 @@ const Layout = (props) => {
                     <meta name="citation_issn" content="2618-6128"/>
 
                     {articles.authors.map((authorin, index) =>
-                        <meta name="citation_author"
+                        <meta name={"citation_author."+(index+1)}
                               content={authorin.author.first_name + " " + (authorin.author.middle_name && (authorin.author.middle_name + " ")) + authorin.author.last_name}/>
                     )}
 
@@ -120,7 +120,7 @@ const Layout = (props) => {
                     <meta
                         name="citation_keywords"
                         xmlLang="tr"
-                        content={(articles.keywords).filter(a => a.keyword.type == "tr").map(a => <a>{a.keyword.value}</a>)}
+                        content={(articles.keywords).filter(a => a.keyword.type == "tr").map(a => a.keyword.value).join(", ")}
                     />
 
                     {articles.files.map((file, index) =>
@@ -129,7 +129,7 @@ const Layout = (props) => {
 
                     {articles.citations.map((citation, index) =>
                         <meta
-                            name="citation_reference"
+                            name={"citation_reference."+(index+1)}
                             content={citation.raw}
                         />
                     )}
