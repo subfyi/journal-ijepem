@@ -1972,22 +1972,10 @@ a:visited {
 
 .faq-one [class*=col-lg-] {
     border-bottom: 1px solid #f1f1f1;
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.faq-one [class*=col-lg-]:nth-child(odd) {
-
-}
-
-.faq-one [class*=col-lg-]:nth-child(even) {
-    border-left: 1px solid #f1f1f1;
-    padding-left: 76px;
-}
-
-.faq-one [class*=col-lg-]:nth-child(1), .faq-one [class*=col-lg-]:nth-child(2) {
-    padding-top: 0;
-}
 
 .faq-one [class*=col-lg-]:nth-child(1) .faq-one__icon span {
     background-color: #1888c9;
@@ -2061,6 +2049,7 @@ a:visited {
 .faq-one__icon {
     white-space: nowrap;
     margin-right: 30px;
+    float: right;
 }
 
 .faq-one__icon span {
@@ -2088,12 +2077,13 @@ a:visited {
     border: 2px solid #f16101;
     -webkit-transition: all .4s ease;
     transition: all .4s ease;
+font-weight: 700;
+    text-transform: uppercase;
 }
 
 .faq-one__title {
     margin: 0;
     font-size: 24px;
-    font-weight: bold;
     color: #012237;
     margin-bottom: 15px;
 }
@@ -3492,9 +3482,6 @@ a:visited {
 }
 
 .course-details__author {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -3888,6 +3875,7 @@ a:visited {
 }
 
 .course-details__tab-text {
+    text-align: justify;
     margin: 0;
     font-size: 16px;
     line-height: 34px;

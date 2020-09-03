@@ -17,9 +17,11 @@ export default class YearList extends React.Component {
         this.validator = new SimpleReactValidator()
     }
 
-    static async getInitialProps({ query }) {
+    static async getInitialProps({query}) {
         var articles = await api("/api/articles?page=1&itemPerPage=-1&sort=order_num&desc=false&journal=IJEPEM&volume=" + query.id + "&issue=" + query.issue);
+        var volumes = await api("/api/volumes?page=1&itemPerPage=-1&sort=id&desc=true&journal=IJEPEM");
         return {
+            volumes: volumes,
             articles: articles,
             volume: query.id,
             issue: query.issue,
@@ -27,17 +29,18 @@ export default class YearList extends React.Component {
     }
 
     render() {
-        const {articles, volume, issue} = this.props;
+        const {articles, volumes, volume, issue} = this.props;
 
         return (
-            <Layout pageTitle={"Volume " + volume + " Issue " + issue  + " | IJEPEM "}>
+            <Layout pageTitle={"Volume " + volume + " Issue " + issue + " | IJEPEM "}>
                 <Topbar/>
                 <NavOne/>
-                <PageHeader title={"Volume " + volume + " Issue " + issue }/>
+                <PageHeader title={"Volume " + volume + " Issue " + issue}/>
                 <Faq
                     articles={articles}
                     volume={volume}
                     issue={issue}
+                    volumes={volumes}
                 />
                 <Footer/>
             </Layout>);

@@ -24,9 +24,9 @@ const CourseDetails = (props) => {
                         <div className="course-details__content">
 
                             <p className="course-details__author">
+
                                 Writer(s): {articles.authors.map((authorin, index) =>
-                                <a href="#">{authorin.author.first_name} {authorin.author.middle_name} {authorin.author.last_name} <sup>{index + 1}</sup>,{" "}
-                                </a>
+                                <a href={"/author/" + authorin.author.id}>{authorin.author.first_name} {authorin.author.middle_name} {authorin.author.last_name} <sup>{index + 1}</sup>,{" "}</a>
                             )}
                             </p>
 
@@ -46,7 +46,8 @@ const CourseDetails = (props) => {
                                     </p>
                                     <br/><br/>
                                     <p className="course-details__author">
-                                        Keyword(s): {(articles.keywords).filter(a => a.keyword.type == "en").map(a => <a>{a.keyword.value}</a>)}
+                                        Keyword(s): {(articles.keywords).filter(a => a.keyword.type == "en").map(a =>
+                                        <a href={"/keyword/" + a.keyword.id}>{a.keyword.value},{" "}</a>)}
                                     </p>
                                 </div>
 
@@ -67,10 +68,15 @@ const CourseDetails = (props) => {
                     </div>
                     <div className="col-lg-4">
                         <div className="course-details__price">
-                            <p className="course-details__price-text">Full text </p>
+                            <p className="course-details__price-text">Tam Metin </p>
+
                             {articles.files.map((file, index) =>
-                                <a target="_blank" href={file.file} className="thm-btn course-details__price-btn">[PDF]</a>
+                                <a target="_blank" href={file.file} className="thm-btn course-details__price-btn">Dergipark [PDF]</a>
                             )}
+
+                            <a target="_blank" href={"/doc/ucbad-" + moment(articles.pubdate).format("YY") + "-0" + issue + "-0" + article + ".pdf"}
+                               className="thm-btn course-details__price-btn">IJEPEM [PDF]</a>
+
                         </div>
 
                         <div className="course-details__meta">

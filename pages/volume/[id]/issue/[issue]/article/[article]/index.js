@@ -17,8 +17,8 @@ export default class Courses extends React.Component {
         this.validator = new SimpleReactValidator()
     }
 
-    static async getInitialProps({ query }) {
-        var articles = await api("/api/articles?page=1&itemPerPage=-1&journal=IJEPEM&volume=" + query.id + "&issue=" + query.issue+ "&article=" + query.article);
+    static async getInitialProps({query}) {
+        var articles = await api("/api/articles?page=1&itemPerPage=-1&journal=IJEPEM&volume=" + query.id + "&issue=" + query.issue + "&article=" + query.article);
         return {
             articles: articles.data[0],
             volume: query.id,
@@ -36,15 +36,15 @@ export default class Courses extends React.Component {
 
         return (
             <Layout
-                pageTitle={"Volume " + volume + " Issue " + issue+ " Article " + article  + " | IJEPEM " }
+                pageTitle={"Volume " + volume + " Issue " + issue + " Article " + article + " | IJEPEM "}
                 articles={articles}
                 volume={volume}
                 issue={issue}
                 article={article}
             >
                 <Topbar/>
-                <NavOne />
-                <PageHeader title={"Volume " + volume + " Issue " + issue+ " Article " + article }/>
+                <NavOne/>
+                <PageHeader title={"Volume " + volume + " Issue " + issue + " Article " + article}/>
                 <CourseDetails
                     articles={articles}
                     volume={volume}
