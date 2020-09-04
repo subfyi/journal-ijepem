@@ -8,30 +8,32 @@ const Faq = (props) => {
             <div className="container">
                 <div className="row no-gutters">
 
-                    {props.year && <>
-                        <div className="col-md-6 text-center align-items-center ">
-                            <Link href={"/doc/ijepem-" + moment(props.year).format("YY") + "-0" + props.issue + "-00-00.pdf"}><a target="_blank">
-                                <img src={"/doc/ijepem-" + moment(props.year).format("YY") + "-0" + props.issue + "-00-00.png"} alt="" width="50%"/>
-                            </a></Link>
-                        </div>
-                        <div className="col-md-6 text-left ">
-                            <Link href={"/doc/ijepem-" + moment(props.year).format("YY") + "-0" + props.issue + "-00-00.pdf"}><a target="_blank"
-                                                                                                                                 className="col-md-6 mb-5 btn btn-outline-dark text-secondary mx-4 ">
-                                COVER
-                            </a></Link>
-                            <Link href={"/doc/ijepem-" + moment(props.year).format("YY") + "-00-00-01.pdf"}><a target="_blank" className="col-md-6 mb-5 btn btn-outline-dark text-secondary mx-4 ">
-                                EDITORS
-                            </a></Link>
-                            <Link href={"/doc/ijepem-" + moment(props.year).format("YY") + "-00-00-02.pdf"}><a target="_blank" className="col-md-6 mb-5 btn btn-outline-dark text-secondary mx-4 ">
-                                ABOUT
-                            </a></Link>
-                            <Link href={"/doc/ijepem-" + moment(props.year).format("YY") + "-0" + props.issue + "-00-03.pdf"}><a target="_blank"
-                                                                                                                                 className="col-md-6 mb-5 btn btn-outline-dark text-secondary mx-4 ">
-                                CONTENTS
+                    {props.volumes && <>
+                        <div className="text-center align-items-center ">
+                            <Link href={"/doc/ijepem-" + moment(props.volumes.data[0].year).format("YY") + "-0" + props.issue + "-00-00.pdf"}><a target="_blank">
+                                <img src={"/doc/ijepem-" + moment(props.volumes.data[0].year).format("YY") + "-0" + props.issue + "-00-00.png"} alt="" width="25%"/>
                             </a></Link>
                         </div>
                         <div className="col-lg-12">
                             <br/>
+                        </div>
+                        <div className="col-lg-12 text-center align-items-center mb-5 ">
+                            <Link href={"/doc/ijepem-" + moment(props.volumes.data[0].year).format("YY") + "-0" + props.issue + "-00-00.pdf"}><a target="_blank"
+                                                                                                                                                 className="btn btn-outline-dark text-secondary mx-4 ">
+                                COVER
+                            </a></Link>
+                            <Link href={"/doc/ijepem-" + moment(props.volumes.data[0].year).format("YY") + "-00-00-01" + (props.volumes.data[0].special && 1 ? "-s": "") + ".pdf"}><a target="_blank"
+                                                                                                                               className="btn btn-outline-dark text-secondary mx-4 ">
+                                EDITORS
+                            </a></Link>
+                            <Link href={"/doc/ijepem-" + moment(props.volumes.data[0].year).format("YY") + "-00-00-02.pdf"}><a target="_blank"
+                                                                                                                               className="btn btn-outline-dark text-secondary mx-4 ">
+                                ABOUT
+                            </a></Link>
+                            <Link href={"/doc/ijepem-" + moment(props.volumes.data[0].year).format("YY") + "-0" + props.issue + "-00-03.pdf"}><a target="_blank"
+                                                                                                                                                 className="btn btn-outline-dark text-secondary mx-4 ">
+                                CONTENTS
+                            </a></Link>
                         </div>
                     </>}
 

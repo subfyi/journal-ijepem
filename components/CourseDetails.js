@@ -74,7 +74,7 @@ const CourseDetails = (props) => {
                                 <a target="_blank" href={file.file} className="thm-btn course-details__price-btn">Dergipark [PDF]</a>
                             )}
 
-                            <a target="_blank" href={"/doc/ucbad-" + moment(articles.pubdate).format("YY") + "-0" + issue + "-0" + article + ".pdf"}
+                            <a target="_blank" href={"/doc/ijepem-" + moment(articles.pubdate).format("YY") + "-0" + issue + (article > 9 ? "-" : "-0") + article + ".pdf"}
                                className="thm-btn course-details__price-btn">IJEPEM [PDF]</a>
 
                         </div>
@@ -114,7 +114,7 @@ const CourseDetails = (props) => {
                                 </a>
                                 <p>
                                     {articles.authors.map((authorin, i, arr) =>
-                                        <>{authorin.author.first_name} {authorin.author.middle_name} {authorin.author.last_name}{i != (arr.length-1) ? ', ' : ''}</>
+                                        <>{authorin.author.first_name} {authorin.author.middle_name} {authorin.author.last_name}{i != (arr.length - 1) ? ', ' : ''}</>
                                     )}. ({moment(articles.pubdate).format("YYYY")}). {articles.en_title}. Ulusal Çevre Bilimleri Araştırma
                                     Dergisi, {volume + " ( " + issue + " ) "}, {articles.first_page}-{articles.last_page}.
                                     {" "}{"http://ijepem.com/volume/" + volume + "/issue/" + issue + "/article/" + article}
@@ -131,7 +131,7 @@ const CourseDetails = (props) => {
                                 <p>
                                     @article{"{"}{moment(articles.pubdate).format("YYYY")}, title={"{"}{articles.en_title}{"}"}, volume={"{"}{volume}{"}"}, number={"{"}{issue}{"}"},
                                     publisher={"{"}International Journal of Environmental Pollution and Environmental Modelling{"}"}, author={"{"}{articles.authors.map((authorin, i, arr) =>
-                                    <>{authorin.author.first_name} {authorin.author.middle_name} {authorin.author.last_name}{i != (arr.length-1) ? ', ' : ''}</>
+                                    <>{authorin.author.first_name} {authorin.author.middle_name} {authorin.author.last_name}{i != (arr.length - 1) ? ', ' : ''}</>
                                 )}{"}"}, year={"{"}{moment(articles.pubdate).format("YYYY")}{"}"}, pages={"{"}{articles.first_page}-{articles.last_page}{"}"} {"}"}
 
                                 </p>
@@ -145,7 +145,7 @@ const CourseDetails = (props) => {
                                 </a>
                                 <p>
                                     {articles.authors.map((authorin, i, arr) =>
-                                        <>{authorin.author.first_name} {authorin.author.middle_name} {authorin.author.last_name}{i != (arr.length-1) ? ', ' : ''}</>
+                                        <>{authorin.author.first_name} {authorin.author.middle_name} {authorin.author.last_name}{i != (arr.length - 1) ? ', ' : ''}</>
                                     )}. {articles.en_title}. no. {volume} International Journal of Environmental Pollution and Environmental Modelling, ({moment(articles.pubdate).format("YYYY")}),
                                     pp. {articles.first_page}-{articles.last_page}.
 
