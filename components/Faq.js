@@ -11,7 +11,7 @@ const Faq = (props) => {
                     {props.volumes && <>
                         <div className="text-center align-items-center ">
                             <Link href={"/doc/ijepem-" + moment(props.volumes.data[0].year).format("YY") + "-0" + props.issue + "-00-00.pdf"}><a target="_blank">
-                                <img src={"/doc/ijepem-" + moment(props.volumes.data[0].year).format("YY") + "-0" + props.issue + "-00-00.png"} alt="" width="25%"/>
+                                <img src={"/doc/ijepem-" + moment(props.volumes.data[0].year).format("YY") + "-0" + props.issue + "-00-00.png"} alt="ijepem" width="25%"/>
                             </a></Link>
                         </div>
                         <div className="col-lg-12">
