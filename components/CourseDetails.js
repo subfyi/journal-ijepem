@@ -25,9 +25,8 @@ const CourseDetails = (props) => {
                         <div className="course-details__content">
 
                             <p className="course-details__author">
-
                                 Writer(s): {articles.authors.map((authorin, index) =>
-                                <a href={"/author/" + authorin.author.id}>{authorin.author.first_name} {authorin.author.middle_name} {authorin.author.last_name} <sup>{index + 1}</sup>,{" "}</a>
+                                <a href={"/author/" + authorin.author.id + "/"}>{authorin.author.first_name} {authorin.author.middle_name} {authorin.author.last_name} <sup>{index + 1}</sup>,{" "}</a>
                             )}
                             </p>
 
@@ -48,7 +47,7 @@ const CourseDetails = (props) => {
                                     <br/><br/>
                                     <p className="course-details__author">
                                         Keyword(s): {(articles.keywords).filter(a => a.keyword.type == "en").map(a =>
-                                        <a href={"/keyword/" + a.keyword.id}>{a.keyword.name},{" "}</a>)}
+                                        <a href={"/keyword/" + a.keyword.id + "/"}>{a.keyword.name},{" "}</a>)}
                                     </p>
                                 </div>
 
@@ -152,7 +151,7 @@ const CourseDetails = (props) => {
                                         <>{authorin.author.first_name} {authorin.author.middle_name} {authorin.author.last_name}{i != (arr.length - 1) ? ', ' : ''}</>
                                     )}. ({moment(articles.pubdate).format("YYYY")}). {articles.en_title}. Ulusal Çevre Bilimleri Araştırma
                                     Dergisi, {volume + " ( " + issue + " ) "}, {articles.first_page}-{articles.last_page}.
-                                    {" "}{"http://ijepem.com/volume/" + volume + "/issue/" + issue + "/article/" + article}
+                                    {" "}{"http://ijepem.com/volume/" + volume + "/issue/" + issue + "/article/" + article + "/"}
                                 </p>
                             </div>
                         </div>
