@@ -17,7 +17,7 @@ module.exports = phase => {
 
     config.env.ENDPOINT = phase === PHASE_DEVELOPMENT_SERVER ?
         'http://localhost:8000' :
-        'https://api.ijepem.com';
+        'https://api.ucbad.com';
 
     config.env.DOMAIN = phase === PHASE_DEVELOPMENT_SERVER ?
         'http://localhost:3000' :
