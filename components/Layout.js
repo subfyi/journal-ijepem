@@ -170,7 +170,7 @@ const Layout = (props) => {
                     />
 
                     <meta name="DC.Language" scheme="ISO639-1" content="en"/>
-                    <meta name="DC.Rights" content="https://ijepem.com/doc/ijepem-telif-hakki-formu.pdf"/>
+                    <meta name="DC.Rights" content="https://ijepem.com/doc/ijepem-copyright.pdf"/>
 
                 </>}
 
