@@ -13,7 +13,7 @@ const TeachersDetails = () => {
                             <p><strong>Prof. Dr. Sukru DURSUN</strong><br/>Konya Technical University<br/>Environmental Engineering Department, Engineering and Natural Sciences Faculty<br/>Konya,
                                 TURKEY</p>
                             <hr/>
-                            <h3 className="team-details__subtitle">EDİTORYAL DANIŞMA KURULU</h3>
+                            <h3 className="team-details__subtitle">EDITORIAL BOARD</h3>
 
                             <p><strong>Prof. Dr. Mustapha HASNAOUI</strong><br/>Department of life Sciences Faculty of Sciences and Techniques, University of Sultan Moulay
                                 Slimane, MOROCCO </p>
