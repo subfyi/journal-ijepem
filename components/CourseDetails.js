@@ -109,7 +109,7 @@ const CourseDetails = (props) => {
                                     <a target="_blank" className="btn btn-outline-dark text-secondary col-md-12 mb-3">
                                         COVER
                                     </a></Link>
-                                <Link href={"/doc/ijepem-" + moment(articles.pubdate).format("YY") + "-00-00-01.pdf"}>
+                                <Link href={"/doc/ijepem-" + moment(articles.pubdate).format("YY") + "-00-00-01" + (articles.volumes.special && 1 ? "-s" : "") + ".pdf"}>
                                     <a target="_blank" className="btn btn-outline-dark text-secondary col-md-12 mb-3">
                                         EDITORS
                                     </a></Link>
