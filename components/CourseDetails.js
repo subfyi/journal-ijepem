@@ -48,7 +48,7 @@ const CourseDetails = (props) => {
                                     <br/><br/>
                                     <p className="course-details__author">
                                         Keyword(s): {(articles.keywords).filter(a => a.keyword.type == "en").map(a =>
-                                        <a href={"/keyword/" + a.keyword.id}>{a.keyword.value},{" "}</a>)}
+                                        <a href={"/keyword/" + a.keyword.id}>{a.keyword.name},{" "}</a>)}
                                     </p>
                                 </div>
 
