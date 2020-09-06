@@ -27,7 +27,7 @@ const Faq = (props) => {
                                     <div className="faq-one__icon">
                                         <Link href={"/volume/" + row.volume + "/issue/" + row.issue + "/article/" + row.order_num + "/"}>
                                             <a className="btn btn-outline-dark text-secondary">
-                                                Sayfa: {row.first_page}-{row.last_page}
+                                                Pages: {row.first_page}-{row.last_page}
                                             </a></Link>
                                     </div>
                                 </div>

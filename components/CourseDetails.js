@@ -98,37 +98,31 @@ const CourseDetails = (props) => {
                                 Page: <span>  {articles.first_page}-{articles.last_page}</span>
                             </a>
                         </div>
-                        {props.volumes && <>
-                            <div className="course-details__price">
 
-                                <div className=" text-center align-items-center">
-
-                                    <Link href={"/doc/ijepem-" + moment(props.volumes.data[0].year).format("YY") + "-0" + props.issue + "-00-00.pdf"}><a target="_blank">
-                                        <img className="w-100 mb-3" src={require("../public/doc/ijepem-" + moment(props.volumes.data[0].year).format("YY") + "-0" + props.issue + "-00-00.png")}
-                                             alt="volume image"/>
+                        <div className="course-details__price">
+                            <div className=" text-center align-items-center">
+                                <Link href={"/doc/ijepem-" + moment(articles.pubdate).format("YY") + "-0" + issue + "-00-00.pdf"}><a target="_blank">
+                                    <img className="w-100 mb-3" src={require("../public/doc/ijepem-" + moment(articles.pubdate).format("YY") + "-0" + issue + "-00-00.png")}
+                                         alt="volume image"/>
+                                </a></Link>
+                                <Link href={"/doc/ijepem-" + moment(articles.pubdate).format("YY") + "-0" + issue + "-00-00.pdf"}>
+                                    <a target="_blank" className="btn btn-outline-dark text-secondary col-md-12 mb-3">
+                                        COVER
                                     </a></Link>
-
-                                    <Link href={"/doc/ijepem-" + moment(props.volumes.data[0].year).format("YY") + "-0" + props.issue + "-00-00.pdf"}>
-                                        <a target="_blank" className="btn btn-outline-dark text-secondary col-md-12 mb-3">
-                                            COVER
-                                        </a></Link>
-
-                                    <Link href={"/doc/ijepem-" + moment(props.volumes.data[0].year).format("YY") + "-00-00-01" + (props.volumes.data[0].special && 1 ? "-s" : "") + ".pdf"}>
-                                        <a target="_blank" className="btn btn-outline-dark text-secondary col-md-12 mb-3">
-                                            EDITORS
-                                        </a></Link>
-                                    <Link href={"/doc/ijepem-" + moment(props.volumes.data[0].year).format("YY") + "-00-00-02.pdf"}>
-                                        <a target="_blank" className="btn btn-outline-dark text-secondary col-md-12 mb-3">
-                                            ABOUT
-                                        </a></Link>
-                                    <Link href={"/doc/ijepem-" + moment(props.volumes.data[0].year).format("YY") + "-0" + props.issue + "-00-03.pdf"}>
-                                        <a target="_blank" className="btn btn-outline-dark text-secondary col-md-12 mb-3">
-                                            CONTENTS
-                                        </a></Link>
-
-                                </div>
+                                <Link href={"/doc/ijepem-" + moment(articles.pubdate).format("YY") + "-00-00-01.pdf"}>
+                                    <a target="_blank" className="btn btn-outline-dark text-secondary col-md-12 mb-3">
+                                        EDITORS
+                                    </a></Link>
+                                <Link href={"/doc/ijepem-" + moment(articles.pubdate).format("YY") + "-00-00-02.pdf"}>
+                                    <a target="_blank" className="btn btn-outline-dark text-secondary col-md-12 mb-3">
+                                        ABOUT
+                                    </a></Link>
+                                <Link href={"/doc/ijepem-" + moment(articles.pubdate).format("YY") + "-0" + issue + "-00-03.pdf"}>
+                                    <a target="_blank" className="btn btn-outline-dark text-secondary col-md-12 mb-3">
+                                        CONTENTS
+                                    </a></Link>
                             </div>
-                        </>}
+                        </div>
 
                     </div>
 
