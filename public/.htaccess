@@ -2,5 +2,50 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 #RewriteCond %{REQUEST_FILENAME} !-d
 
-RewriteRule ^sitemap(.*?).xml$ https://api.ucbad.com/sitemap/ijepem$1.xml [p,l,E=Proxy-Host:api.ucbad.com]
+RewriteRule ^cilt-(\d+)-sayi-(\d+) /volume/$1/issue/$2  [R=301,L]
+RewriteRule ^cilt-(\d+)/sayi-(\d+) /volume/$1/issue/$2  [R=301,L]
+RewriteRule ^volume-(\d+)-issue-(\d+) /volume/$1/issue/$2  [R=301,L]
+RewriteRule ^volume-(\d+)/issue-(\d+) /volume/$1/issue/$2  [R=301,L]
+RewriteRule ^issue/view/volume-(\d+)-issue-(\d+) /volume/$1/issue/$2  [R=301,L]
+RewriteRule ^issue/view/volume-(\d+)/issue-(\d+) /volume/$1/issue/$2  [R=301,L]
+
+RewriteRule ^cilt-(\d+)/sayi-(\d+)/paper-(\d+) /volume/$1/issue/$2/article/$3  [R=301,L]
+RewriteRule ^volume-(\d+)/issue-(\d+)/paper-(\d+) /volume/$1/issue/$2/article/$3  [R=301,L]
+RewriteRule ^article/view/volume-(\d+)-issue-(\d+)-article-(\d+) /volume/$1/issue/$2/article/$3  [R=301,L]
+RewriteRule ^article/view/volume-(\d+)/issue-(\d+)/article-(\d+) /volume/$1/issue/$2/article/$3  [R=301,L]
+
+RewriteRule ^ijepem/cilt-(\d+)-sayi-(\d+) /volume/$1/issue/$2  [R=301,L]
+RewriteRule ^ijepem/cilt-(\d+)/sayi-(\d+) /volume/$1/issue/$2  [R=301,L]
+RewriteRule ^ijepem/volume-(\d+)-issue-(\d+) /volume/$1/issue/$2  [R=301,L]
+RewriteRule ^ijepem/volume-(\d+)/issue-(\d+) /volume/$1/issue/$2  [R=301,L]
+RewriteRule ^ijepem/issue/view/volume-(\d+)-issue-(\d+) /volume/$1/issue/$2  [R=301,L]
+RewriteRule ^ijepem/issue/view/volume-(\d+)/issue-(\d+) /volume/$1/issue/$2  [R=301,L]
+
+RewriteRule ^ijepem/cilt-(\d+)/sayi-(\d+)/paper-(\d+) /volume/$1/issue/$2/article/$3  [R=301,L]
+RewriteRule ^ijepem/volume-(\d+)/issue-(\d+)/paper-(\d+) /volume/$1/issue/$2/article/$3  [R=301,L]
+RewriteRule ^ijepem/article/view/volume-(\d+)-issue-(\d+)-article-(\d+) /volume/$1/issue/$2/article/$3  [R=301,L]
+RewriteRule ^ijepem/article/view/volume-(\d+)/issue-(\d+)/article-(\d+) /volume/$1/issue/$2/article/$3  [R=301,L]
+
+RewriteRule ^ijepem/ethics-statement/(.*) /ethics-statement/$1 [R=301,L]
+
+RewriteRule ^editorial-board$ /editorial-team  [R=301,L]
+RewriteRule ^about/editorialTeam$ /editorial-team  [R=301,L]
+
+RewriteRule ^ciltler$ /volumes  [R=301,L]
+RewriteRule ^sayilar$ /volumes  [R=301,L]
+RewriteRule ^issue/archive$ /volumes  [R=301,L]
+
+RewriteRule ^publisher$ /contact  [R=301,L]
+RewriteRule ^iletisim$ /contact  [R=301,L]
+RewriteRule ^about/contact$ /about/contact  [R=301,L]
+
+RewriteRule ^online-submission$ https://dergipark.org.tr/tr/journal/2662/submission/step/manuscript/new  [R=301,L]
+RewriteRule ^online-gonderi$ https://dergipark.org.tr/tr/journal/2662/submission/step/manuscript/new  [R=301,L]
+RewriteRule ^about/submissions$ https://dergipark.org.tr/tr/journal/2662/submission/step/manuscript/new  [R=301,L]
+
+Redirect 301 /about https://ijepem.com/editorial-team
+Redirect 301 /ijepem https://ijepem.com/
+Redirect 301 /ucbad https://ucbad.com/
+
+RewriteRule ^sitemap(.*?).xml$ https://api.ucbad.com/sitemap/sitemap$1.xml [p,l,E=Proxy-Host:api.ucbad.com]
 RewriteRule (.*) http://127.0.0.1:7425/$1 [p]
