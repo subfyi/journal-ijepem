@@ -7,6 +7,7 @@ import SimpleReactValidator from "simple-react-validator";
 import api from "../../../../../../../api";
 import Footer from "../../../../../../../components/Footer";
 import Topbar from "../../../../../../../components/Topbar";
+import Faq from "../../../../../../../components/Faq";
 
 export default class Courses extends React.Component {
     state = {}
@@ -19,7 +20,9 @@ export default class Courses extends React.Component {
 
     static async getInitialProps({query}) {
         var articles = await api("/api/articles?page=1&itemPerPage=-1&journal=IJEPEM&volume=" + query.id + "&issue=" + query.issue + "&article=" + query.article);
+        var volumes = await api("/api/volumes?page=1&itemPerPage=-1&sort=id&desc=true&journal=IJEPEM&volume=" + query.id + "&issue=" + query.issue);
         return {
+            volumes: volumes,
             articles: articles.data[0],
             volume: query.id,
             issue: query.issue,
@@ -28,7 +31,8 @@ export default class Courses extends React.Component {
     }
 
     render() {
-        const {articles, volume, issue, years, article} = this.props;
+        const {articles, volume,
+            volumes, issue, years, article} = this.props;
 
         if (!articles) {
             return <div>404</div>
@@ -50,6 +54,7 @@ export default class Courses extends React.Component {
                     volume={volume}
                     issue={issue}
                     article={article}
+                    volumes={volumes}
                 />
                 <Footer/>
             </Layout>);
