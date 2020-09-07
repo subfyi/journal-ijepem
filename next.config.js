@@ -1,6 +1,6 @@
 const withPlugins = require('next-compose-plugins');
 const optimizedImages = require('next-optimized-images');
-const { PHASE_DEVELOPMENT_SERVER } = require('next/constants');
+const {PHASE_DEVELOPMENT_SERVER} = require('next/constants');
 
 module.exports = phase => {
     var config = withPlugins([
@@ -11,7 +11,7 @@ module.exports = phase => {
         ]
     ]).apply(this, arguments);
 
-    if(!config.env) {
+    if (!config.env) {
         config.env = {};
     }
 
