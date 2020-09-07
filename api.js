@@ -1,8 +1,7 @@
-
 export default async (url, params) => {
     var task;
 
-    var newParams = params && { ...params, headers: { 'Accept': 'application/json', ...(params.headers || {}) } };
+    var newParams = params && {...params, headers: {'Accept': 'application/json', ...(params.headers || {})}};
 
     if (url.startsWith('/')) {
         task = fetch(process.env.ENDPOINT + url, newParams);
@@ -12,7 +11,7 @@ export default async (url, params) => {
 
     var data = await task;
 
-    switch(data.status) {
+    switch (data.status) {
         case 200:
             return await data.json();
         case 204:
@@ -23,7 +22,7 @@ export default async (url, params) => {
             let error;
             try {
                 error = await data.json();
-            } catch(e) {
+            } catch (e) {
                 throw new Error('Invalid response on ' + url);
             }
 
