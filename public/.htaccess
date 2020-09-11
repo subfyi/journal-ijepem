@@ -2,23 +2,23 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 #RewriteCond %{REQUEST_FILENAME} !-d
 
-RewriteRule ^volume-(\d+)-issue-(\d+) /volume/$1/issue/$2  [R=301,L]
-RewriteRule ^volume-(\d+)/issue-(\d+) /volume/$1/issue/$2  [R=301,L]
-RewriteRule ^issue/view/volume-(\d+)-issue-(\d+) /volume/$1/issue/$2  [R=301,L]
-RewriteRule ^issue/view/volume-(\d+)/issue-(\d+) /volume/$1/issue/$2  [R=301,L]
+RewriteRule ^volume-(\d+)-issue-(\d+) /volume-$1/issue-$2  [R=301,L]
+RewriteRule ^volume-(\d+)/issue-(\d+) /volume-$1/issue-$2  [R=301,L]
+RewriteRule ^issue/view/volume-(\d+)-issue-(\d+) /volume-$1/issue-$2  [R=301,L]
+RewriteRule ^issue/view/volume-(\d+)/issue-(\d+) /volume-$1/issue-$2  [R=301,L]
 
-RewriteRule ^volume-(\d+)/issue-(\d+)/paper-(\d+) /volume/$1/issue/$2/article/$3  [R=301,L]
-RewriteRule ^article/view/volume-(\d+)-issue-(\d+)-article-(\d+) /volume/$1/issue/$2/article/$3  [R=301,L]
-RewriteRule ^article/view/volume-(\d+)/issue-(\d+)/article-(\d+) /volume/$1/issue/$2/article/$3  [R=301,L]
+RewriteRule ^volume-(\d+)/issue-(\d+)/paper-(\d+) /volume-$1/issue-$2/article-$3  [R=301,L]
+RewriteRule ^article/view/volume-(\d+)-issue-(\d+)-article-(\d+) /volume-$1/issue-$2/article-$3  [R=301,L]
+RewriteRule ^article/view/volume-(\d+)/issue-(\d+)/article-(\d+) /volume-$1/issue-$2/article-$3  [R=301,L]
 
-RewriteRule ^ijepem/volume-(\d+)-issue-(\d+) /volume/$1/issue/$2  [R=301,L]
-RewriteRule ^ijepem/volume-(\d+)/issue-(\d+) /volume/$1/issue/$2  [R=301,L]
-RewriteRule ^ijepem/issue/view/volume-(\d+)-issue-(\d+) /volume/$1/issue/$2  [R=301,L]
-RewriteRule ^ijepem/issue/view/volume-(\d+)/issue-(\d+) /volume/$1/issue/$2  [R=301,L]
+RewriteRule ^ijepem/volume-(\d+)-issue-(\d+) /volume-$1/issue-$2  [R=301,L]
+RewriteRule ^ijepem/volume-(\d+)/issue-(\d+) /volume-$1/issue-$2  [R=301,L]
+RewriteRule ^ijepem/issue/view/volume-(\d+)-issue-(\d+) /volume-$1/issue-$2  [R=301,L]
+RewriteRule ^ijepem/issue/view/volume-(\d+)/issue-(\d+) /volume-$1/issue-$2  [R=301,L]
 
-RewriteRule ^ijepem/volume-(\d+)/issue-(\d+)/paper-(\d+) /volume/$1/issue/$2/article/$3  [R=301,L]
-RewriteRule ^ijepem/article/view/volume-(\d+)-issue-(\d+)-article-(\d+) /volume/$1/issue/$2/article/$3  [R=301,L]
-RewriteRule ^ijepem/article/view/volume-(\d+)/issue-(\d+)/article-(\d+) /volume/$1/issue/$2/article/$3  [R=301,L]
+RewriteRule ^ijepem/volume-(\d+)/issue-(\d+)/paper-(\d+) /volume-$1/issue-$2/article-$3  [R=301,L]
+RewriteRule ^ijepem/article/view/volume-(\d+)-issue-(\d+)-article-(\d+) /volume-$1/issue-$2/article-$3  [R=301,L]
+RewriteRule ^ijepem/article/view/volume-(\d+)/issue-(\d+)/article-(\d+) /volume-$1/issue-$2/article-$3  [R=301,L]
 
 RewriteRule ^ijepem/ethics-statement/(.*) /ethics-statement/$1 [R=301,L]
 
