@@ -1,12 +1,12 @@
 import React from 'react';
-import Layout from "../../../../../../../components/Layout";
-import NavOne from "../../../../../../../components/NavOne";
-import PageHeader from "../../../../../../../components/PageHeader";
-import CourseDetails from "../../../../../../../components/CourseDetails";
+import Layout from "../../../../components/Layout";
+import NavOne from "../../../../components/NavOne";
+import PageHeader from "../../../../components/PageHeader";
+import CourseDetails from "../../../../components/CourseDetails";
 import SimpleReactValidator from "simple-react-validator";
-import api from "../../../../../../../api";
-import Footer from "../../../../../../../components/Footer";
-import Topbar from "../../../../../../../components/Topbar";
+import api from "../../../../api";
+import Footer from "../../../../components/Footer";
+import Topbar from "../../../../components/Topbar";
 
 export default class Courses extends React.Component {
     state = {}
@@ -18,12 +18,15 @@ export default class Courses extends React.Component {
     }
 
     static async getInitialProps({query}) {
-        var articles = await api("/api/articles?page=1&itemPerPage=-1&journal=IJEPEM&volume=" + query.id + "&issue=" + query.issue + "&article=" + query.article);
+        const id = query.volume.split('-').slice(-1)[0]
+        const issue = query.issue.split('-').slice(-1)[0]
+        const article = query.article.split('-').slice(-1)[0]
+        var articles = await api("/api/articles?page=1&itemPerPage=-1&journal=IJEPEM&volume=" + id + "&issue=" + issue + "&article=" + article);
         return {
             articles: articles.data[0],
-            volume: query.id,
-            issue: query.issue,
-            article: query.article,
+            volume: id,
+            issue: issue,
+            article: article,
         };
     }
 

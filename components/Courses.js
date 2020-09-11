@@ -9,7 +9,7 @@ const Courses = (props) => {
                 <div className="row">
                     {props.volumes.data.map((row, i) => <>
                         <div className="col-lg-3" key={row.id}>
-                            <Link href={"/volume/" + row.volume + "/issue/" + row.issue + "/"}><a>
+                            <Link href={"/volume-" + row.volume + "/issue-" + row.issue + "/"}><a>
                                 <div className="course-one__single">
                                     <div className="course-one__image">
                                         <img src={require("../public/doc/ijepem-"+ moment(row.year).format("YY") +"-0" + row.issue + "-00-00.png")}

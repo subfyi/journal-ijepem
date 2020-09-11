@@ -27,7 +27,7 @@ const Layout = (props) => {
                     <meta name="og:title" property="og:title" content={articles.en_title} />
                     <meta name="og:description" property="og:description" content="" />
                     <meta property="og:site_name" content="International Journal of Environmental Pollution and Environmental Modelling"/>
-                    <meta property="og:url" content={"https://ijepem.com/volume/" + articles.volume + "/issue/" + articles.issue + "/article/" + articles.order_num}/>
+                    <meta property="og:url" content={"https://ijepem.com/volume-" + articles.volume + "/issue-" + articles.issue + "/article-" + articles.order_num}/>
                     <meta property="og:image" content="/favicon/android-icon-192x192.png"/>
 
                     <meta name="twitter:card" content="summary" />
@@ -37,7 +37,7 @@ const Layout = (props) => {
                     <meta name="twitter:creator" content="Sub Network Solutions" />
                     <meta name="twitter:image" content="/favicon/android-icon-192x192.png"/>
 
-                    <link rel="canonical" href={"https://ijepem.com/volume/" + articles.volume + "/issue/" + articles.issue + "/article/" + articles.order_num}/>
+                    <link rel="canonical" href={"https://ijepem.com/volume-" + articles.volume + "/issue-" + articles.issue + "/article-" + articles.order_num}/>
 
                     <link rel="schema.DC"
                           href="http://purl.org/dc/elements/1.1/"/>
@@ -116,7 +116,7 @@ const Layout = (props) => {
                     <meta name="DC.Identifier.pageNumber" content={articles.first_page + "-" + articles.last_page}/>
                     <meta
                         name="DC.Identifier.URI"
-                        content={"https://ijepem.com/volume/" + articles.volume + "/issue/" + articles.issue + "/article/" + articles.order_num}
+                        content={"https://ijepem.com/volume-" + articles.volume + "/issue-" + articles.issue + "/article-" + articles.order_num}
                     />
                     <meta name="DC.Language" content='tr scheme="ISO639-1"'/>
 
@@ -142,7 +142,7 @@ const Layout = (props) => {
                     <meta name="citation_lastpage" content={articles.last_page}/>
                     <meta
                         name="citation_abstract_html_url"
-                        content={"https://ijepem.com/volume/" + articles.volume + "/issue/" + articles.issue + "/article/" + articles.order_num}
+                        content={"https://ijepem.com/volume-" + articles.volume + "/issue-" + articles.issue + "/article-" + articles.order_num}
                     />
                     <meta name="citation_language" content="en"/>
                     <meta

@@ -13,7 +13,7 @@ const Faq = (props) => {
                             {props.articles.data.map((row, i) => <>
                                 <div className="col-lg-12" key={row.id}>
                                     <div className="faq-one__single">
-                                        <Link href={"/volume/" + row.volume + "/issue/" + row.issue + "/article/" + row.order_num + "/"}><a>
+                                        <Link href={"/volume-" + row.volume + "/issue-" + row.issue + "/article-" + row.order_num + "/"}><a>
                                             <div className="faq-one__content">
                                                 <h2 className="faq-one__title">{row.en_title}</h2>
                                                 <p className="faq-one__text">
@@ -25,7 +25,7 @@ const Faq = (props) => {
                                         </a></Link>
                                     </div>
                                     <div className="faq-one__icon">
-                                        <Link href={"/volume/" + row.volume + "/issue/" + row.issue + "/article/" + row.order_num + "/"}>
+                                        <Link href={"/volume-" + row.volume + "/issue-" + row.issue + "/article-" + row.order_num + "/"}>
                                             <a className="btn btn-outline-dark text-secondary">
                                                 Pages: {row.first_page}-{row.last_page}
                                             </a></Link>

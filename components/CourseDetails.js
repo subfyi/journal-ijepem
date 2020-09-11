@@ -143,7 +143,7 @@ const CourseDetails = (props) => {
                                         <>{authorin.author.first_name} {authorin.author.middle_name} {authorin.author.last_name}{i != (arr.length - 1) ? ', ' : ''}</>
                                     )}. ({moment(articles.pubdate).format("YYYY")}). {articles.en_title}. Ulusal Çevre Bilimleri Araştırma
                                     Dergisi, {volume + " ( " + issue + " ) "}, {articles.first_page}-{articles.last_page}.
-                                    {" "}{"http://ijepem.com/volume/" + volume + "/issue/" + issue + "/article/" + article + "/"}
+                                    {" "}{"http://ijepem.com/volume-" + volume + "/issue-" + issue + "/article-" + article + "/"}
                                 </p>
                             </div>
                         </div>
