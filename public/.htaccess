@@ -2,6 +2,8 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 #RewriteCond %{REQUEST_FILENAME} !-d
 
+RewriteRule ^volume/(\d+)/issue/(\d+)/article/(\d+) /volume-$1/issue-$2/article-$3  [R=301,L]
+
 RewriteRule ^volume-(\d+)-issue-(\d+) /volume-$1/issue-$2  [R=301,L]
 RewriteRule ^issue/view/volume-(\d+)-issue-(\d+) /volume-$1/issue-$2  [R=301,L]
 RewriteRule ^issue/view/volume-(\d+)/issue-(\d+) /volume-$1/issue-$2  [R=301,L]
