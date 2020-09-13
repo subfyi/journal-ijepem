@@ -102,7 +102,7 @@ const CourseDetails = (props) => {
             <div className="course-details__price">
               <div className=" text-center align-items-center">
                 <a target="_blank" href={'/doc/ijepem-' + moment(articles.pubdate).format('YY') + '-0' + issue + '-00-00.pdf'}>
-                  <img className="w-100 mb-3" src={require('../public/doc/ijepem-' + moment(articles.pubdate).format('YY') + '-0' + issue + '-00-00.png')} alt="volume image" />
+                  <img className="w-100 mb-3" src={require('../public/doc/ijepem-' + moment(articles.pubdate).format('YY') + '-0' + issue + '-00-00.png?resize&size=270')} alt="volume image" />
                 </a>
                 <a target="_blank" className="btn btn-outline-dark text-secondary col-md-12 mb-3"
                    href={'/doc/ijepem-' + moment(articles.pubdate).format('YY') + '-0' + issue + '-00-00.pdf'}>

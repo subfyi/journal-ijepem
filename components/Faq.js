@@ -42,7 +42,7 @@ const Faq = (props) => {
 
                                 <div className=" text-center align-items-center">
                                     <a target="_blank" href={"/doc/ijepem-" + moment(props.volumes.data[0].year).format("YY") + "-0" + props.issue + "-00-00.pdf"}>
-                                        <img className="w-100 mb-3" src={require("../public/doc/ijepem-" + moment(props.volumes.data[0].year).format("YY") + "-0" + props.issue + "-00-00.png")}
+                                        <img className="w-100 mb-3" src={require("../public/doc/ijepem-" + moment(props.volumes.data[0].year).format("YY") + "-0" + props.issue + "-00-00.png?resize&size=270")}
                                              alt="volume image"/>
                                     </a>
                                     <a target="_blank" className="btn btn-outline-dark text-secondary col-md-12 mb-3"
