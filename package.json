@@ -44,6 +44,18 @@
     "reactstrap": "^8.4.1"
   },
   "devDependencies": {
-    "url-loader": "^4.1.0"
+    "url-loader": "^4.1.0",
+    "image-trace-loader": "^1.0.2",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-svgo": "^8.0.0",
+    "jimp": "^0.14.0",
+    "lqip-loader": "^2.2.0",
+    "prettier": "2.0.5",
+    "responsive-loader": "^2.0.0",
+    "sass": "^1.26.10",
+    "svg-sprite-loader": "^5.0.0",
+    "webp-loader": "^0.6.0"
   }
 }

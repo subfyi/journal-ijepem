@@ -12,7 +12,7 @@ const Courses = (props) => {
                             <Link href={"/volume-" + row.volume + "/issue-" + row.issue + "/"}><a>
                                 <div className="course-one__single">
                                     <div className="course-one__image">
-                                        <img src={require("../public/doc/ijepem-"+ moment(row.year).format("YY") +"-0" + row.issue + "-00-00.png")}
+                                        <img src={require("../public/doc/ijepem-"+ moment(row.year).format("YY") +"-0" + row.issue + "-00-00.png?resize&size=270")}
                                              alt="volume image"/>
                                     </div>
                                     <div className="course-one__content">
