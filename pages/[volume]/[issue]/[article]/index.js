@@ -21,7 +21,7 @@ export default class Courses extends React.Component {
         const id = query.volume.split('-').slice(-1)[0]
         const issue = query.issue.split('-').slice(-1)[0]
         const article = query.article.split('-').slice(-1)[0]
-        var articles = await api("/api/articles?page=1&itemPerPage=-1&journal=IJEPEM&volume=" + id + "&issue=" + issue + "&article=" + article);
+        var articles = await api("/api/articles?page=1&itemPerPage=-1&journal_id=1&volume=" + id + "&issue=" + issue + "&article=" + article);
         return {
             articles: articles.data[0],
             volume: id,

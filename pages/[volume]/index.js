@@ -19,7 +19,7 @@ export default class YearList extends React.Component {
 
   static async getInitialProps({ query }) {
     const id = query.volume.split('-').slice(-1)[0]
-    var volumes = await api('/api/volumes?page=1&itemPerPage=-1&sort=id&desc=true&journal=IJEPEM&volume=' + id)
+    var volumes = await api('/api/volumes?page=1&itemPerPage=-1&sort=id&desc=true&journal_id=1&volume=' + id)
     return {
       volumes: volumes
     }

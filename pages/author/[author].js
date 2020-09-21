@@ -1,6 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
-import http from '../../api'
 import SimpleReactValidator from "simple-react-validator";
 import api from "../../api";
 import Layout from "../../components/Layout";
@@ -20,7 +18,7 @@ export default class extends React.Component {
     }
 
     static async getInitialProps({query}) {
-        var articles = await api("/api/articles?page=1&itemPerPage=-1&sort=order_num&desc=false&journal=IJEPEM&author=" + query.author);
+        var articles = await api("/api/articles?page=1&itemPerPage=-1&sort=order_num&desc=false&journal_id=1&author=" + query.author);
         return {
             articles: articles,
             author: query.author,
