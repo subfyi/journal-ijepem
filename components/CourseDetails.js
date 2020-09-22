@@ -1,6 +1,5 @@
 import React from 'react'
 import moment from 'moment'
-import Link from 'next/link'
 
 const CourseDetails = (props) => {
   const { articles, volume, volumes, issue, article } = props
@@ -15,7 +14,7 @@ const CourseDetails = (props) => {
 
               <div className="course-details__top">
                 <div className="course-details__top-left">
-                  <h2 className="course-details__title">{articles.en_title}
+                  <h2 className="course-details__title">{articles.article_infos.find(el => el.lang_id == articles.primary_language).title}
                   </h2>
                 </div>
               </div>
@@ -41,12 +40,12 @@ const CourseDetails = (props) => {
               <div className="tab-content course-details__tab-content ">
                 <div className="tab-pane show active  animated fadeInUp" role="tabpanel" id="overview">
                   <p className="course-details__tab-text">
-                    {articles.en_abstract}
+                    {articles.article_infos.find(el => el.lang_id == articles.primary_language).abstract}
 
                   </p>
                   <br /><br />
                   <p className="course-details__author">
-                    Keyword(s): {(articles.keywords).filter(a => a.keyword.type == 'en').map(a =>
+                    Keyword(s): {(articles.keywords).map(a =>
                     <a href={'/keyword/' + a.keyword.id + '/'}>{a.keyword.name},{' '}</a>)}
                   </p>
                 </div>
@@ -57,7 +56,7 @@ const CourseDetails = (props) => {
                     {articles.citations.map((citation, index) =>
                       <li>
                         <div className="course-details__curriculum-list-left">
-                          [{index + 1}] {citation.raw}
+                          [{index + 1}] {citation.citation.raw}
                         </div>
                       </li>
                     )}
@@ -70,15 +69,12 @@ const CourseDetails = (props) => {
 
 
             <div className="course-details__price">
-              <p className="course-details__price-text">Tam Metin </p>
-
-              {articles.files.map((file, index) =>
-                <a target="_blank" href={file.file} className="thm-btn course-details__price-btn">Dergipark [PDF]</a>
-              )}
-
+              <p className="course-details__price-text">Full text </p>
               <a target="_blank" href={'/doc/ijepem-' + moment(articles.pubdate).format('YY') + '-0' + issue + (article > 9 ? '-' : '-0') + article + '.pdf'}
                  className="thm-btn course-details__price-btn">IJEPEM [PDF]</a>
-
+              {articles.files.map((a =>
+                <a target="_blank" href={a.file.url} className="thm-btn course-details__price-btn">Dergipark [PDF]</a>))
+              }
             </div>
 
             <div className="course-details__meta">
@@ -121,7 +117,6 @@ const CourseDetails = (props) => {
                 </a>
               </div>
             </div>
-
           </div>
 
           <div className="col-lg-12">
@@ -129,57 +124,47 @@ const CourseDetails = (props) => {
           </div>
 
           <div className="col-lg-12 blog-one__content">
-            <h2 className="course-details__list-title">SOURCE SHOW </h2>
-
-
+            <h2 className="course-details__list-title">Show References</h2>
             <div className="course-details__list-item">
-              <div className="course-details__list-content">
-
-                <a href="#" className="course-details__meta-link">
+              <div className="row course-details__list-content">
+                <a className="col-md-3 course-details__meta-link">
                   Citation type: <span>APA</span>
                 </a>
-                <p>
-                  <code>
-                    {articles.authors.map((authorin, i, arr) =>
-                      <>{authorin.author.first_name} {authorin.author.middle_name} {authorin.author.last_name}{i != (arr.length - 1) ? ', ' : ''}</>
-                    )}. ({moment(articles.pubdate).format('YYYY')}). {articles.en_title}. Ulusal Çevre Bilimleri Araştırma
-                    Dergisi, {volume + ' ( ' + issue + ' ) '}, {articles.first_page}-{articles.last_page}.
-                    {' '}{'http://ijepem.com/volume-' + volume + '/issue-' + issue + '/article-' + article + '/'}
-                  </code>
-                </p>
-              </div>
-            </div>
-
-            <div className="course-details__list-item">
-              <div className="course-details__list-content">
-
-                <a href="#" className="course-details__meta-link">
-                  Citation type: <span>BibTex</span>
-                </a>
-                <p>
-                  <code>
-                    @article{'{'}{moment(articles.pubdate).format('YYYY')}, title={'{'}{articles.en_title}{'}'}, volume={'{'}{volume}{'}'}, number={'{'}{issue}{'}'},
-                    publisher={'{'}International Journal of Environmental Pollution and Environmental Modelling{'}'}, author={'{'}{articles.authors.map((authorin, i, arr) =>
+                <code className="col-md-9">
+                  {articles.authors.map((authorin, i, arr) =>
                     <>{authorin.author.first_name} {authorin.author.middle_name} {authorin.author.last_name}{i != (arr.length - 1) ? ', ' : ''}</>
-                  )}{'}'}, year={'{'}{moment(articles.pubdate).format('YYYY')}{'}'}, pages={'{'}{articles.first_page}-{articles.last_page}{'}'} {'}'}
-                  </code>
-                </p>
+                  )}. ({moment(articles.pubdate).format('YYYY')}). {articles.article_infos.find(el => el.lang_id == articles.primary_language).title}. Ulusal Çevre Bilimleri Araştırma
+                  Dergisi, {volume + ' ( ' + issue + ' ) '}, {articles.first_page}-{articles.last_page}.
+                  {' '}{'http://ijepem.com/volume-' + volume + '/issue-' + issue + '/article-' + article + '/'}
+                </code>
               </div>
             </div>
             <div className="course-details__list-item">
-              <div className="course-details__list-content">
-
-                <a href="#" className="course-details__meta-link">
+              <div className="row course-details__list-content">
+                <a className="col-md-3 course-details__meta-link">
+                  Citation: <span>BibTex</span>
+                </a>
+                <code className="col-md-9">
+                  @article{'{'}{moment(articles.pubdate).format('YYYY')}, title={'{'}{articles.article_infos.find(el => el.lang_id == articles.primary_language).title}{'}'},
+                  volume={'{'}{volume}{'}'}, number={'{'}{issue}{'}'},
+                  publisher={'{'}International Journal of Environmental Pollution and Environmental Modelling{'}'}, author={'{'}{articles.authors.map((authorin, i, arr) =>
+                  <>{authorin.author.first_name} {authorin.author.middle_name} {authorin.author.last_name}{i != (arr.length - 1) ? ', ' : ''}</>
+                )}{'}'}, year={'{'}{moment(articles.pubdate).format('YYYY')}{'}'}, pages={'{'}{articles.first_page}-{articles.last_page}{'}'} {'}'}
+                </code>
+              </div>
+            </div>
+            <div className="course-details__list-item">
+              <div className="row course-details__list-content">
+                <a className="col-md-3 course-details__meta-link">
                   Citation type: <span>MLA</span>
                 </a>
-                <p>
-                  <code>
-                    {articles.authors.map((authorin, i, arr) =>
-                      <>{authorin.author.first_name} {authorin.author.middle_name} {authorin.author.last_name}{i != (arr.length - 1) ? ', ' : ''}</>
-                    )}. {articles.en_title}. no. {volume} International Journal of Environmental Pollution and Environmental Modelling, ({moment(articles.pubdate).format('YYYY')}),
-                    pp. {articles.first_page}-{articles.last_page}.
-                  </code>
-                </p>
+                <code className="col-md-9">
+                  {articles.authors.map((authorin, i, arr) =>
+                    <>{authorin.author.first_name} {authorin.author.middle_name} {authorin.author.last_name}{i != (arr.length - 1) ? ', ' : ''}</>
+                  )}. {articles.article_infos.find(el => el.lang_id == articles.primary_language).title}. no. {volume} International Journal of Environmental Pollution and Environmental Modelling,
+                  ({moment(articles.pubdate).format('YYYY')}),
+                  pp. {articles.first_page}-{articles.last_page}.
+                </code>
               </div>
             </div>
           </div>

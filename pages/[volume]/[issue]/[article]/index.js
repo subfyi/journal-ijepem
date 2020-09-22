@@ -39,7 +39,7 @@ export default class Courses extends React.Component {
 
         return (
             <Layout
-                pageTitle={articles.en_title + " | IJEPEM "}
+                pageTitle={articles.article_infos.find(el => el.lang_id == articles.primary_language).title + " | IJEPEM "}
                 articles={articles}
                 volume={volume}
                 issue={issue}
