@@ -9,7 +9,7 @@ const Faq = (props) => {
       <div className="container">
         <div className="row no-gutters">
 
-          <div className="col-lg-8 pr-3">
+          <div className={props.volumes ? "col-lg-8 pr-3" : "col-lg-12 pr-3"}>
             <div className="row">
               {props.articles.data.map((row, i) => <>
                 <div className="col-lg-12" key={row.id}>
@@ -36,9 +36,9 @@ const Faq = (props) => {
             </div>
           </div>
 
-
+          {props.volumes && <>
           <div className="col-lg-4">
-            {props.volumes && <>
+
               <div className="course-details__price">
 
                 <div className=" text-center align-items-center">
@@ -64,8 +64,8 @@ const Faq = (props) => {
                   </a>
                 </div>
               </div>
-            </>}
           </div>
+          </>}
 
         </div>
       </div>
