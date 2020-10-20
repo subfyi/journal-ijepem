@@ -31,7 +31,7 @@ const TeachersPage = () => {
                                     Copyright Form File Must Be Signed By All Authors And Uploaded To The System.
 
                                 </p>
-                                <p><a href="https://ijepem.com/doc/ijepem-telif-hakki-formu.pdf"> Copyright Form File ( https://ijepem.com/doc/ijepem-telif-hakki-formu.pdf )</a></p>
+                                <p><a href="https://ijepem.com/doc/ijepem-copyright.pdf"> Copyright Form File ( https://ijepem.com/doc/ijepem-copyright.pdf )</a></p>
 
 
                             </div>

@@ -20,8 +20,8 @@ export default class YearList extends React.Component {
     static async getInitialProps({query}) {
       const id = query.volume.split('-').slice(-1)[0]
       const issue = query.issue.split('-').slice(-1)[0]
-        var articles = await api("/api/articles?page=1&itemPerPage=-1&sort=order_num&desc=false&journal_id=1&volume=" + id + "&issue=" + issue);
-        var volumes = await api("/api/volumes?page=1&itemPerPage=-1&sort=id&desc=true&journal_id=1&volume=" + id + "&issue=" + issue);
+        var articles = await api("/api/article?page=1&itemPerPage=-1&sort=order_num&desc=false&journal_id=1&volume=" + id + "&issue=" + issue);
+        var volumes = await api("/api/volume?page=1&itemPerPage=-1&sort=id&desc=true&journal_id=1&volume=" + id + "&issue=" + issue);
         return {
             volumes: volumes,
             articles: articles,

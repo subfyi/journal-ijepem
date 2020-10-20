@@ -1,6 +1,5 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
 # dependencies
+/~
 /node_modules
 /.pnp
 .pnp.js
@@ -8,28 +7,26 @@
 # testing
 /coverage
 
-# next.js
-/.next/
-/out/
+# redactor
+/.idea
 
 # production
+/_site
 /build
 
 # misc
 .DS_Store
-yarn.lock
-
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# local env files
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+yarn.lock
 
-#jetbrains
-/.idea/
+.next
+.idea
+.htm
+package-lock.json

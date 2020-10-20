@@ -4,6 +4,8 @@ import moment from 'moment'
 const CourseDetails = (props) => {
   const { articles, volume, volumes, issue, article } = props
 
+  const primary_article = articles.article_infos.find(el => el.lang_id == articles.primary_language);
+
   return (
     <section className="course-details">
 
@@ -14,7 +16,7 @@ const CourseDetails = (props) => {
 
               <div className="course-details__top">
                 <div className="course-details__top-left">
-                  <h2 className="course-details__title">{articles.article_infos.find(el => el.lang_id == articles.primary_language).title}
+                  <h2 className="course-details__title">{primary_article.title}
                   </h2>
                 </div>
               </div>
