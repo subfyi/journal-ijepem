@@ -63,7 +63,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p 7425",
+    "start": "next start -p 7424",
     "export": "next build && next export"
   },
   "resolutions": {
