@@ -1,48 +1,50 @@
-import React from 'react';
-import Layout from "../components/Layout";
-import NavOne from "../components/NavOne";
-import PageHeader from "../components/PageHeader";
-import Footer from "../components/Footer";
-import Topbar from "../components/Topbar";
+import React from 'react'
+import Layout from '../components/Layout'
+import NavOne from '../components/NavOne'
+import PageHeader from '../components/PageHeader'
+import Footer from '../components/Footer'
+import Topbar from '../components/Topbar'
+import AboutTwo from '../components/AboutTwo'
+import SubscribeOne from '../components/SubscribeOne'
 
 const TeachersPage = () => {
-    return (
-        <Layout pageTitle="Guide for Authors | IJEPEM">
-            <Topbar/>
-            <NavOne/>
-            <PageHeader title="Guide for Authors"/>
-            <section className="team-details">
-                <div className="container">
-                    <div className="row justify-content-between">
-                        <div className="col-lg-12">
-                            <div className="team-details__content">
-                                <p>
-                                    All manuscripts should be written accourding to template document given below.
+  return (
+    <Layout pageTitle="Guide for Authors | IJEPEM">
+      <Topbar />
+      <NavOne />
+      <PageHeader title="Guide for Authors" />
+      <section className="team-details">
+        <div className="container">
+          <div className="row justify-content-between">
+            <div className="col-lg-12">
+              <div className="team-details__content">
+                <p>
+                  All manuscripts should be written accourding to template document given below.
 
 
+                </p>
+                <p><a href="https://ijepem.com/IJEPEM-Template-for-Autors.docx"> Template for Autors ( https://ijepem.com/IJEPEM-Template-for-Autors.docx )
 
-                                </p>
-                                <p><a href="https://ijepem.com/IJEPEM-Template-for-Autors.docx">  Template for Autors ( https://ijepem.com/IJEPEM-Template-for-Autors.docx )
+                </a>
+                </p>
 
-                                </a>
-                                </p>
+                <p>
+                  Copyright Form File Must Be Signed By All Authors And Uploaded To The System.
 
-                                <p>
-                                    Copyright Form File Must Be Signed By All Authors And Uploaded To The System.
-
-                                </p>
-                                <p><a href="https://ijepem.com/doc/ijepem-copyright.pdf"> Copyright Form File ( https://ijepem.com/doc/ijepem-copyright.pdf )</a></p>
+                </p>
+                <p><a href="https://ijepem.com/doc/ijepem-copyright.pdf"> Copyright Form File ( https://ijepem.com/doc/ijepem-copyright.pdf )</a></p>
 
 
-                            </div>
-                        </div>
+              </div>
+            </div>
 
-                    </div>
-                </div>
-            </section>
-            <Footer/>
-        </Layout>
-    );
-};
+          </div>
+        </div>
+      </section>
+      <SubscribeOne />
+      <Footer />
+    </Layout>
+  )
+}
 
-export default TeachersPage;
+export default TeachersPage

@@ -77,6 +77,7 @@ class NavOne extends Component {
                             </Link>
                             <div className="header__social">
                                 <a target="_blank" href="https://www.facebook.com/ijepem"><i className="fab fa-facebook-square"></i></a>
+                                <Link href="/indexes/"><a><i className="fas fa-book"></i></a></Link>
                             </div>
                             <button className="menu-toggler">
                                 <span className="kipso-icon-menu"></span>
@@ -88,16 +89,16 @@ class NavOne extends Component {
                                     <Link href="/"><a>Homepage</a></Link>
                                 </li>
                                 <li>
-                                    <a href="/volumes">Volumes</a>
+                                    <a href="/volumes/">Volumes</a>
                                 </li>
                                 <li>
-                                    <Link href="/editorial-team"><a>Editorial Team</a></Link>
+                                    <Link href="/editorial-team/"><a>Editorial Team</a></Link>
                                 </li>
                                 <li>
-                                    <Link href="/aim-and-scope"><a>Aim and Scope</a></Link>
+                                    <Link href="/aim-and-scope/"><a>Aim and Scope</a></Link>
                                 </li>
                                 <li>
-                                    <Link href="/contact"><a>Contact</a></Link>
+                                    <Link href="/contact/"><a>Contact</a></Link>
                                 </li>
                             </ul>
                         </div>

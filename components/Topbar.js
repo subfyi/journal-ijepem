@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Link from 'next/link'
 
 class Topbar extends Component {
     render() {
@@ -7,6 +8,7 @@ class Topbar extends Component {
                 <div className="container">
                     <div className="topbar-one__left">
                         <a href="https://dergipark.org.tr/en/pub/ijepem">INTERNATIONAL JOURNAL OF ENVIRONMENTAL POLLUTION AND ENVIRONMENTAL MODELLING</a>
+                        <Link href="/indexes/"><a>INDEXES</a></Link>
                         <a target="_blank" href="https://portal.issn.org/resource/issn/2618-6128">ISSN-2618-6128</a>
                     </div>
                     <div className="topbar-one__right">

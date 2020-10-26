@@ -7,6 +7,7 @@ import SimpleReactValidator from "simple-react-validator";
 import api from "../../../../api";
 import Footer from "../../../../components/Footer";
 import Topbar from "../../../../components/Topbar";
+import Seo from '../../../../components/Common/Seo'
 
 export default class Courses extends React.Component {
     state = {}
@@ -45,6 +46,11 @@ export default class Courses extends React.Component {
                 issue={issue}
                 article={article}
             >
+                <Seo
+                  title={articles.article_infos.find(el => el.lang_id == articles.primary_language).title + " | IJEPEM "}
+                  description={"Volumes | IJEPEM" || ""}
+                  keywords={"Volumes | IJEPEM" || ""}
+                />
                 <Topbar/>
                 <NavOne/>
                 <PageHeader title={"Volume " + volume + " Issue " + issue + " Article " + article}/>
