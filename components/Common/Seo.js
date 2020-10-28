@@ -7,7 +7,7 @@ function title(str) {
     if (str.length >= 70) {
         const arr = str.split(" | ");
         arr.pop();
-        return arr.join(" | ");
+        return arr.join(" | ").substr(0,70);
     }
 
     return str;

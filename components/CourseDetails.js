@@ -42,7 +42,7 @@ const CourseDetails = (props) => {
               <div className="tab-content course-details__tab-content ">
                 <div className="tab-pane show active  animated fadeInUp" role="tabpanel" id="overview">
                   <p className="course-details__tab-text">
-                    {articles.article_infos.find(el => el.lang_id == articles.primary_language).abstract}
+                    {articles.article_infos.find(el => el.lang_id == articles.primary_language).abstract.replace(/(<([^>]+)>)/gi, "").replace(/[\r\n]/g, ' ')}
 
                   </p>
                   <br /><br />

@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import moment from 'moment'
+import { DefaultSeo } from "next-seo";
 
 const Layout = (props) => {
   const { articles, volume, issue, article, pageTitle } = props
@@ -9,99 +10,48 @@ const Layout = (props) => {
     <div>
       <Head>
 
+        {!articles && <title>{pageTitle}</title>}
+
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="generator" content="Sub Network Solutions" />
 
 
         {articles && <>
-          <base href="/" />
-          <meta name="generator" content="Sub Network Solutions" />
-
-          <meta name="description" content={articles.article_infos.find(el => el.lang_id == articles.primary_language).abstract} />
-          <meta name="keywords" content={(articles.keywords).map(a => a.keyword.name).join(', ')} />
-
-          <meta property="og:type" content="website" />
-          <meta name="og:title" property="og:title" content={articles.article_infos.find(el => el.lang_id == articles.primary_language).title} />
-          <meta name="og:description" property="og:description" content="" />
           <meta property="og:site_name" content="International Journal of Environmental Pollution and Environmental Modelling" />
-          <meta property="og:url" content={process.env.DOMAIN + '/volume-' + articles.volume + '/issue-' + articles.issue + '/article-' + articles.order_num + '/'} />
           <meta property="og:image" content="/favicon/android-icon-192x192.png" />
-
-          <meta name="twitter:card" content="summary" />
-          <meta name="twitter:title" content={articles.article_infos.find(el => el.lang_id == articles.primary_language).title} />
-          <meta name="twitter:description" content={articles.article_infos.find(el => el.lang_id == articles.primary_language).abstract} />
-          <meta name="twitter:site" content="International Journal of Environmental Pollution and Environmental Modelling" />
-          <meta name="twitter:creator" content="Sub Network Solutions" />
-          <meta name="twitter:image" content="/favicon/android-icon-192x192.png" />
 
           <link rel="canonical" href={process.env.DOMAIN + '/volume-' + articles.volume + '/issue-' + articles.issue + '/article-' + articles.order_num + '/'} />
 
-          <link rel="schema.DC"
-                href="http://purl.org/dc/elements/1.1/" />
+          <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
 
-          <meta name="DC.Contributor.Sponsor"
-                xmlLang="en"
-                content />
+          <meta name="DC.Contributor.Sponsor" xmlLang="en" content />
 
-          <meta
-            content={articles.updated_at}
-            property="article:modified_time"
-          />
-          <meta
-            content="article"
-            property="og:type" />
-          <meta
-            content={articles.article_infos.find(el => el.lang_id == articles.primary_language).title}
-            property="og:title"
-          />
-
-          <meta
-            content={'https://ijepem.com/doc/ijepem-' + moment(articles.pubdate).format('YY') + '-0' + issue + (article > 9 ? '-' : '-0') + article + '.pdf'}
-            property="og:url" />
-
+          <meta content={articles.updated_at} property="article:modified_time" />
 
           {articles.citations.map((citation, index) =>
-            <meta
-              name={'citation_reference.' + (index + 1)}
-              content={citation.raw}
-            />
+            <meta name={'citation_reference.' + (index + 1)} content={citation.raw} />
           )}
-
 
           <meta name="DC.Title"
                 content={articles.article_infos.find(el => el.lang_id == articles.primary_language).title}
           />
-          <meta name="DC.Description"
-                xmlLang="en"
-                content={articles.article_infos.find(el => el.lang_id == articles.primary_language).abstract} />
+          <meta name="DC.Description" xmlLang="en"
+                content={articles.article_infos.find(el => el.lang_id == articles.primary_language).abstract.replace(/(<([^>]+)>)/gi, '')} />
           <meta name="DC.Source" content="International Journal of Environmental Pollution and Environmental Modelling" />
           <meta name="DC.Source.ISSN" content="2618-6128" />
           <meta name="DC.Source.Issue" content={issue} />
           <meta name="DC.Source.URI" content={process.env.DOMAIN} />
           <meta name="DC.Source.Volume" content={volume} />
-          <meta
-            name="DC.Subject"
-            xmlLang="en"
-            content={(articles.keywords).filter(a => a.keyword.type == 'en').map(a => a.keyword.value).join(', ')}
-          />
+          <meta name="DC.Subject" xmlLang="en" content={(articles.keywords).filter(a => a.keyword.type == 'en').map(a => a.keyword.value).join(', ')} />
 
-          <meta name="DC.Type"
-                content="Text.Serial.Journal" />
-          <meta name="DC.Type.articleType"
-                content="article" />
-          <meta name="DC.Date.created"
-                scheme="ISO8601"
-                content={articles.created_at} />
-          <meta name="DC.Date.dateSubmitted"
-                scheme="ISO8601"
-                content={moment(articles.submission_date).format('DD-MM-YYYY')} />
-          <meta name="DC.Date.issued"
-                scheme="ISO8601"
-                content={moment(articles.created_at).format('DD-MM-YYYY')} />
-          <meta name="DC.Date.modified"
-                scheme="ISO8601"
-                content={articles.updated_at} />
+          <meta name="DC.Type" content="Text.Serial.Journal" />
+          <meta name="DC.Type.articleType" content="article" />
+          <meta name="DC.Date.created" scheme="ISO8601" content={articles.created_at} />
+          <meta name="DC.Date.dateSubmitted" scheme="ISO8601" content={moment(articles.submission_date).format('DD-MM-YYYY')} />
+          <meta name="DC.Date.issued" scheme="ISO8601" content={moment(articles.created_at).format('DD-MM-YYYY')} />
+          <meta name="DC.Date.modified" scheme="ISO8601" content={articles.updated_at} />
 
           {articles.authors.map((authorin, index) =>
             <meta name={'DC.Creator.PersonalName.' + (index + 1)}
@@ -109,25 +59,18 @@ const Layout = (props) => {
           )}
 
           <meta name="DC.Format" scheme="IMT" content="application/pdf" />
-
           <meta name="DC.Identifier" content={articles.volume + articles.issue + articles.order_num + '/'} />
           <meta name="DC.Identifier.pageNumber" content={articles.first_page + '-' + articles.last_page} />
-          <meta
-            name="DC.Identifier.URI"
-            content={process.env.DOMAIN + '/volume-' + articles.volume + '/issue-' + articles.issue + '/article-' + articles.order_num + '/'}
-          />
+          <meta name="DC.Identifier.URI" content={process.env.DOMAIN + '/volume-' + articles.volume + '/issue-' + articles.issue + '/article-' + articles.order_num + '/'} />
           <meta name="DC.Language" content='tr scheme="ISO639-1"' />
 
           <meta name="gs_meta_revision" content="1.1" />
 
-          <meta
-            name="citation_journal_title"
-            content="International Journal of Environmental Pollution and Environmental Modelling"
+          <meta name="citation_journal_title" content="International Journal of Environmental Pollution and Environmental Modelling"
           />
 
           {articles.authors.map((authorin, index) =>
-            <meta name={'citation_author.' + (index + 1)}
-                  content={authorin.author.first_name + ' ' + (authorin.author.middle_name && (authorin.author.middle_name + ' ')) + authorin.author.last_name} />
+            <meta name={'citation_author.' + (index + 1)} content={authorin.author.first_name + ' ' + (authorin.author.middle_name && (authorin.author.middle_name + ' ')) + authorin.author.last_name} />
           )}
           <meta name="citation_title" content={articles.article_infos.find(el => el.lang_id == articles.primary_language).title} />
 
@@ -138,15 +81,10 @@ const Layout = (props) => {
           <meta name="citation_issue" content={issue} />
           <meta name="citation_firstpage" content={articles.first_page} />
           <meta name="citation_lastpage" content={articles.last_page} />
-          <meta
-            name="citation_abstract_html_url"
-            content={process.env.DOMAIN + '/volume-' + articles.volume + '/issue-' + articles.issue + '/article-' + articles.order_num + '/'}
+          <meta name="citation_abstract_html_url" content={process.env.DOMAIN + '/volume-' + articles.volume + '/issue-' + articles.issue + '/article-' + articles.order_num + '/'}
           />
           <meta name="citation_language" content="en" />
-          <meta
-            name="citation_keywords"
-            xmlLang="en"
-            content={(articles.keywords).filter(a => a.keyword.type == 'en').map(a => a.keyword.value).join(', ')}
+          <meta name="citation_keywords" xmlLang="en" content={(articles.keywords).filter(a => a.keyword.type == 'en').map(a => a.keyword.value).join(', ')}
           />
 
           {articles.files.map((file, index) =>
@@ -155,17 +93,10 @@ const Layout = (props) => {
 
 
           {articles.citations.map((citation, index) =>
-            <meta
-              name={'citation_reference.' + (index + 1)}
-              content={citation.citation.raw}
-            />
+            <meta name={'citation_reference.' + (index + 1)} content={citation.citation.raw} />
           )}
 
-          <meta
-            id="meta_stats_updated_at"
-            name="stats_updated_at"
-            content={articles.updated_at}
-          />
+          <meta id="meta_stats_updated_at" name="stats_updated_at" content={articles.updated_at} />
 
           <meta name="DC.Language" scheme="ISO639-1" content="en" />
           <meta name="DC.Rights" content={process.env.DOMAIN + '/doc/ijepem-copyright.pdf'} />
@@ -199,7 +130,12 @@ const Layout = (props) => {
         <link rel="stylesheet" href={process.env.DOMAIN + '/assets/css/responsive.css'} />
 
       </Head>
-
+      <DefaultSeo
+        titleTemplate={"%s | IJEPEM"}
+        title="International Journal of Environmental Pollution and Environmental Modelling"
+        description={'International Journal of Environmental Pollution and Environmental Modelling (IJEPEM), Int. j. environ. pollut. environ. model., ISSN-2618-6128' || ''}
+        keywords={'Environmental Pollution, Environmental Modeling, International Journal, peer review'}
+      />
 
       <div className="page-wrapper">
 
