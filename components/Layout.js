@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import moment from 'moment'
-import { DefaultSeo } from "next-seo";
+import { DefaultSeo } from "next-seo"
 
 const Layout = (props) => {
   const { articles, volume, issue, article, pageTitle } = props

@@ -7,7 +7,6 @@ import SimpleReactValidator from 'simple-react-validator'
 import api from '../../../../api'
 import Footer from '../../../../components/Footer'
 import Topbar from '../../../../components/Topbar'
-import { NextSeo } from 'next-seo'
 import Seo from '../../../../components/Common/Seo'
 
 export default class Courses extends React.Component {
