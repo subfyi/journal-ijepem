@@ -23,7 +23,7 @@ const TeachersPage = () => {
 
 
                 </p>
-                <p><a href="https://ijepem.com/IJEPEM-Template-for-Autors.docx"> Template for Autors ( https://ijepem.com/IJEPEM-Template-for-Autors.docx )
+                <p><a href="https://ijepem.com/doc/IJEPEM-Template-for-Autors.docx"> Template for Autors ( https://ijepem.com/IJEPEM-Template-for-Autors.docx )
 
                 </a>
                 </p>
