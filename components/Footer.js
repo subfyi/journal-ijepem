@@ -21,8 +21,8 @@ const Footer = () => {
                       <p>2018</p>
                     </li>
                     <li>
-                      <h2>Frequency</h2>
-                      <p>four times a year</p>
+                      <h2>Period</h2>
+                      <p>Biannually</p>
                     </li>
                     <li>
                       <h2>Abbreviated key-title</h2>
@@ -76,14 +76,10 @@ const Footer = () => {
           <div className="container">
             <p className="site-footer__copy">&copy; Copyright 2020 by <a target="_blank" href="https://sub.fyi/">Sub.fyi</a></p>
             <div className="site-footer__social">
-
-              <div onClick={scrollTop} className="scroll-to-target site-footer__scroll-top"><i
-                className="kipso-icon-top-arrow"></i></div>
-
-
+              <div onClick={scrollTop} className="scroll-to-target site-footer__scroll-top"><i className="kipso-icon-top-arrow"></i></div>
               <a target="_blank" href="https://www.facebook.com/ijepem"><i className="fab fa-facebook-square"></i></a>
               <Link href="/indexes/"><a><i className="fas fa-book"></i></a></Link>
-
+              <Link href="/history/"><a><i className="fas fa-history"></i></a></Link>
             </div>
           </div>
         </div>
@@ -99,10 +95,7 @@ const Footer = () => {
           </form>
         </div>
       </div>
-
     </div>
-
-
   )
 }
 export default Footer

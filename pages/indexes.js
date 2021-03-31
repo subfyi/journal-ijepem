@@ -95,11 +95,11 @@ const TeachersPage = () => {
                   </li>
                   <li>
                     <a
-                      href="https://journals.indexcopernicus.com/search/details?id=49940&lang=en"
+                      href="https://journals.indexcopernicus.com/search/journal/issue?issueId=all&journalId=49940"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      https://journals.indexcopernicus.com/search/details?id=49940&amp;lang=en
+                      https://journals.indexcopernicus.com/search/journal/issue?issueId=all&journalId=49940
                     </a>
                   </li>
                   <li>

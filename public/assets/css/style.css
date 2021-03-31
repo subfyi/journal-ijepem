@@ -7221,3 +7221,14 @@ html {
     font-size: 53px;
     cursor: pointer;
 }
+
+.tg > tbody > tr > td:first-child {
+    border: 1px solid #ededed;
+    padding: 2px 8px;
+    width: 5% !important;
+}
+.tg > tbody > tr > td {
+    border: 1px solid #ededed;
+    padding: 2px 8px;
+    width: 95%;
+}
