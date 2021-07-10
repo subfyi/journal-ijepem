@@ -23,7 +23,7 @@ const TeachersPage = () => {
                 <ul>
                   <li>
                     <a
-                      href="http://dergipark.gov.tr/ijepem"
+                      href="https://dergipark.org.tr/ijepem"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
