@@ -47,7 +47,7 @@ const Faq = (props) => {
                          alt="volume image" />
                   </a>
                   <a target="_blank" className="btn btn-outline-dark text-secondary col-md-12 mb-3"
-                     href={'/doc/ijepem-' + moment(props.volumes.data[0].year).format('YY') + '-0' + props.issue + '-00-00.pdf'}>
+                      href={'/doc/ijepem-' + moment(props.volumes.data[0].year).format('YY') + '-0' + props.issue + '-00-00.pdf'}>
                     COVER
                   </a>
                   <a target="_blank" className="btn btn-outline-dark text-secondary col-md-12 mb-3"
@@ -58,8 +58,12 @@ const Faq = (props) => {
                      href={'/doc/ijepem-' + moment(props.volumes.data[0].year).format('YY') + '-00-00-02.pdf'}>
                     ABOUT
                   </a>
-                  <a target="_blank" className="btn btn-outline-dark text-secondary col-md-12 mb-3"
+                  {/* <a target="_blank" className="btn btn-outline-dark text-secondary col-md-12 mb-3"
                      href={'/doc/ijepem-' + moment(props.volumes.data[0].year).format('YY') + '-0' + props.issue + '-00-03.pdf'}>
+                    CONTENTS
+                  </a>*/}
+                  <a className="btn btn-outline-dark text-secondary col-md-12 mb-3"
+                     href={'/volume-' + props.articles.data[0].volume + '/issue-' + props.articles.data[0].issue+ "/"}>
                     CONTENTS
                   </a>
                 </div>
