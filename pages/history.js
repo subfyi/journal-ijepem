@@ -17,6 +17,19 @@ const TeachersPage = () => {
           <div className="row justify-content-between">
             <div className="col-lg-12">
               <div className="team-details__content">
+                <p><strong>Journal History</strong></p>
+                <table className="tg" border="0">
+                  <tbody>
+                  <tr>
+                    <td>2018</td>
+                    <td>Inaugural issue released, initially published as a quarterly journal.</td>
+                  </tr>
+                  <tr>
+                    <td>2021</td>
+                    <td>Changed to a biannually publication schedule. <br />The 61th paper was published.</td>
+                  </tr>
+                  </tbody>
+                </table>
                 <p><strong>Editorial History</strong></p>
                 <table className="tg" border="0">
                   <tbody>
