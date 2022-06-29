@@ -317,6 +317,11 @@ const TeachersPage = () => {
                   </tr>
                   <tr>
                     <td>
+                      <em>Editor-in-Chief </em>: Prof. Dr. Sukru Dursun<br/>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
                       <em>Editorial Asistant </em>: Dr. Zeynep Cansu Ayturan<br/>
                     </td>
                   </tr>
