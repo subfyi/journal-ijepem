@@ -6,7 +6,6 @@ import Footer from '../components/Footer'
 import Contact from '../components/Contact'
 import ContactForm from '../components/ContactForm'
 import Topbar from '../components/Topbar'
-import SubscribeOne from '../components/SubscribeOne'
 
 const GalleryPage = () => {
   return (
@@ -16,7 +15,6 @@ const GalleryPage = () => {
       <PageHeader title="Contact" />
       <Contact />
       <ContactForm />
-      <SubscribeOne />
       <Footer />
     </Layout>
   )

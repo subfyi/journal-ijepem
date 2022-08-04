@@ -5,8 +5,6 @@ import PageHeader from '../components/PageHeader'
 import Footer from '../components/Footer'
 import TeachersDetails from '../components/TeachersDetails'
 import Topbar from '../components/Topbar'
-import AboutTwo from '../components/AboutTwo'
-import SubscribeOne from '../components/SubscribeOne'
 
 const TeachersDetailsPage = () => {
   return (
@@ -15,7 +13,6 @@ const TeachersDetailsPage = () => {
       <NavOne />
       <PageHeader title="Editorial Board" />
       <TeachersDetails />
-      <SubscribeOne />
       <Footer />
     </Layout>
   )

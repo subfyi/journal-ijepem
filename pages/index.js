@@ -15,7 +15,6 @@ const HomePage = () => (
     <NavOne />
     <AboutOne />
     <AboutTwo />
-    <SubscribeOne />
     <Footer />
   </Layout>
 

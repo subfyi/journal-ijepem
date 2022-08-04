@@ -4,8 +4,6 @@ import NavOne from '../components/NavOne'
 import PageHeader from '../components/PageHeader'
 import Footer from '../components/Footer'
 import Topbar from '../components/Topbar'
-import AboutTwo from '../components/AboutTwo'
-import SubscribeOne from '../components/SubscribeOne'
 
 const TeachersPage = () => {
   return (
@@ -425,7 +423,6 @@ const TeachersPage = () => {
           </div>
         </div>
       </section>
-      <SubscribeOne />
       <Footer />
     </Layout>
   )
