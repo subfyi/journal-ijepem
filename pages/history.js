@@ -400,6 +400,97 @@ const TeachersPage = () => {
                   </tr>
                   </tbody>
                 </table>
+                <table className="tg" border="0">
+                  <tbody>
+                  <tr>
+                    <td><b>2022</b>  (Volume 5 Issue 1, Volume 5 Issue 2)</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <em>Editor-in-Chief </em>: Prof. Dr. Sukru Dursun<br/>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <em>Editorial Asistant </em>: Dr. Zeynep Cansu Ayturan<br/>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <em>Other Editors </em>:
+                      Prof. Dr. Mustapha HASNAOUI
+                      ,
+                      Prof. Dr. Victor A.DRYBAN
+                      ,
+                      Prof. Dr. Amjad SHRAIM
+                      ,
+                      Prof. Dr. Stamatis ZOGARIS
+                      ,
+                      Prof. Dr. Scott S. KNIGHT
+                      ,
+                      Prof. Dr. Abdelbasset Bessadok-JEMAI
+                      ,
+                      Prof. Dr. IR. Raf DEWIL
+                      ,
+                      Dr. Somjai KARNCHANAWONG
+                      ,
+                      Prof. Dr. Houcine BENAÏSSA
+                      ,
+                      Dr. Hisham M. Alidrisi
+                      ,
+                      Prof. Dr. Chedly TIZAOUI
+                      ,
+                      Prof. Dr. Tarit Roychowdhury
+                      ,
+                      Prof. Dr. Umar HAMZAH
+                      ,
+                      Dr. Blerina Vrenozi
+                      ,
+                      Prof Dr. B. Zoran SAPURIK
+                      ,
+                      Prof. Dr Hab. Boguslaw BUSZEWSK
+                      ,
+                      Prof. Dr. Irena BARANOWSKA
+                      ,
+                      Prof. Dr. Nicola SENESI
+                      ,
+                      Prof. Dr. N. MODIRSHAHLA
+                      ,
+                      Prof.Dr. Rüdiger ANLAUF
+                      ,
+                      Prof. Dr. Leah MOORE
+                      ,
+                      Dr. Jacek D. Czerwinski
+                      ,
+                      Prof. Dr. Indumathi M NAMBI
+                      ,
+                      Prof. Dr Abdel-Moneim M. Galal Shaalan
+                      ,
+                      Prof. Dr. Tay Joo HWA
+                      ,
+                      Prof. Dr. Massimo ZUCCHETTI
+                      ,
+                      Prof. Dr. Mohammad SHAHRIARI
+                      ,
+                      Prof. Dr. Maris KLAVINS
+                      ,
+                      Prof. Dr. Hasan ARMAN
+                      ,
+                      Prof. Dr. Spase SHUMKA
+                      ,
+                      Dr. Florian KONGOLI
+                      ,
+                      Prof. Dr. Abdelbasset BESSADOK-JEMAI
+                      ,
+                      Prof. Dr. Fernardo SA Neves SANTOS
+                      ,
+                      Prof. Dr. Skender MUJI
+                      ,
+                      Prof. Dr. Hysen MANKOLLI
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>

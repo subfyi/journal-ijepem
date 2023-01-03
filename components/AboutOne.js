@@ -22,7 +22,12 @@ class AboutOne extends Component {
                 <img src="assets/images/circle-stripe.png" className="about-one__circle" alt="" />
                     <div className="container text-center">
                         <div className="block-title text-center">
-                            <h2 className="block-title__title">International Journal of Environmental Pollution and Environmental Modelling </h2>
+                            <a target="_blank" className="block-title__title" href="https://dergipark.org.tr/en/pub/ijepem">
+                            <h2 className="block-title__title">
+                                    International Journal of Environmental Pollution and Environmental Modelling
+
+                                 </h2>
+                            </a>
                         </div>
 
                         <p className="about-one__text">IJEPEM (International Journal of Environmental Pollution and Environmental Modelling) is a leading journal for environmental researchers in several areas such as water pollution, wastewater pollution, air pollution, solid waste management, biotechnology, soil pollution, surface and groundwater, renewable energy, energy management, microbiology, sustainability, waste recovery and transformation, fuzzy logic, artificial neural networks.
