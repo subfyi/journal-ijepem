@@ -64,7 +64,7 @@ const Footer = () => {
                   <p className="footer-widget__text">International Journal of Environmental Pollution and Environmental Modelling is a peer reviewed quarterly journal since 2018
                   </p>
                   <div className="footer-widget__btn-block">
-                    <a href="/volumes" className="thm-btn">Volumes</a>
+                    <a href="https://dergipark.org.tr/en/pub/ijepem/archive" className="thm-btn">Volumes</a>
                     <a href="/contact" className="thm-btn">Contact</a>
                   </div>
                 </div>
@@ -74,9 +74,10 @@ const Footer = () => {
         </div>
         <div className="site-footer__bottom">
           <div className="container">
-            <p className="site-footer__copy">&copy; Copyright 2021 by <a target="_blank" href="https://sub.fyi/">Sub.fyi</a></p>
+            <p className="site-footer__copy">&copy; Copyright 2023 by <a target="_blank" href="https://sub.fyi/">Sub.fyi</a></p>
             <div className="site-footer__social">
-              <div onClick={scrollTop} className="scroll-to-target site-footer__scroll-top"><i className="kipso-icon-top-arrow"></i></div>
+              <div onClick={scrollTop} className="scroll-to-target site-footer__scroll-top"><i
+                  className="fas fa-arrow-up"></i></div>
               <a target="_blank" href="https://www.facebook.com/ijepem"><i className="fab fa-facebook-square"></i></a>
               <Link href="/indexes/"><a><i className="fas fa-book"></i></a></Link>
               <Link href="/history/"><a><i className="fas fa-history"></i></a></Link>

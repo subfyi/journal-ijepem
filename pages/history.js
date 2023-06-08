@@ -33,7 +33,7 @@ const TeachersPage = () => {
                 <table className="tg" border="0">
                   <tbody>
                   <tr>
-                    <td><b>2018</b>  (Volume 1 Issue 1, Volume 1 Issue 2, Volume 1 Issue 3, Volume 1 Issue 4)</td>
+                    <td><b>2023</b>  (Volume 6 Issue 1)</td>
                   </tr>
                   <tr>
                     <td>
@@ -42,7 +42,10 @@ const TeachersPage = () => {
                   </tr>
                   <tr>
                     <td>
-                      <em>Editorial Asistant </em>: Ms. Zeynep Cansu Ayturan<br/>
+                      <em>Editorial Asistant </em>: Dr. Zeynep Cansu Ayturan<br/>
+                    </td>
+                    <td>
+                      <em>Editorial Asistant </em>: Dr. Elif Göksu Öztürk<br/>
                     </td>
                   </tr>
                   <tr>
@@ -119,14 +122,12 @@ const TeachersPage = () => {
                       Prof. Dr. Hysen MANKOLLI
                     </td>
                   </tr>
-
-
                   </tbody>
                 </table>
                 <table className="tg" border="0">
                   <tbody>
                   <tr>
-                    <td><b>2019</b>  (Volume 2 Issue 1, Volume 2 Issue 2, Volume 2 Issue 4, Volume 2 Issue 5)</td>
+                    <td><b>2022</b>  (Volume 5 Issue 1, Volume 5 Issue 2)</td>
                   </tr>
                   <tr>
                     <td>
@@ -135,102 +136,7 @@ const TeachersPage = () => {
                   </tr>
                   <tr>
                     <td>
-                      <em>Editorial Asistant </em>: Ms. Zeynep Cansu Ayturan<br/>
-                    </td>
-                  </tr>
-                  <tr>
-
-                    <td>
-                      <em>Other Editors </em>:
-                      Prof. Dr. Mustapha HASNAOUI
-                      ,
-                      Prof. Dr. Victor A.DRYBAN
-                      ,
-                      Prof. Dr. Amjad SHRAIM
-                      ,
-                      Prof. Dr. Stamatis ZOGARIS
-                      ,
-                      Prof. Dr. Scott S. KNIGHT
-                      ,
-                      Prof. Dr. Abdelbasset Bessadok-JEMAI
-                      ,
-                      Prof. Dr. IR. Raf DEWIL
-                      ,
-                      Dr. Somjai KARNCHANAWONG
-                      ,
-                      Prof. Dr. Houcine BENAÏSSA
-                      ,
-                      Dr. Hisham M. Alidrisi
-                      ,
-                      Prof. Dr. Chedly TIZAOUI
-                      ,
-                      Prof. Dr. Tarit Roychowdhury
-                      ,
-                      Prof. Dr. Umar HAMZAH
-                      ,
-                      Dr. Blerina Vrenozi
-                      ,
-                      Prof Dr. B. Zoran SAPURIK
-                      ,
-                      Prof. Dr Hab. Boguslaw BUSZEWSK
-                      ,
-                      Prof. Dr. Irena BARANOWSKA
-                      ,
-                      Prof. Dr. Nicola SENESI
-                      ,
-                      Prof. Dr. N. MODIRSHAHLA
-                      ,
-                      Prof.Dr. Rüdiger ANLAUF
-                      ,
-                      Prof. Dr. Leah MOORE
-                      ,
-                      Dr. Jacek D. Czerwinski
-                      ,
-                      Prof. Dr. Indumathi M NAMBI
-                      ,
-                      Prof. Dr Abdel-Moneim M. Galal Shaalan
-                      ,
-                      Prof. Dr. Tay Joo HWA
-                      ,
-                      Prof. Dr. Massimo ZUCCHETTI
-                      ,
-                      Prof. Dr. Mohammad SHAHRIARI
-                      ,
-                      Prof. Dr. Maris KLAVINS
-                      ,
-                      Prof. Dr. Hasan ARMAN
-                      ,
-                      Prof. Dr. Spase SHUMKA
-                      ,
-                      Dr. Florian KONGOLI
-                      ,
-                      Prof. Dr. Abdelbasset BESSADOK-JEMAI
-                      ,
-                      Prof. Dr. Fernardo SA Neves SANTOS
-                      ,
-                      Prof. Dr. Skender MUJI
-                      ,
-                      Prof. Dr. Hysen MANKOLLI
-                    </td>
-                  </tr>
-
-
-                  </tbody>
-                </table>
-
-                <table className="tg" border="0">
-                  <tbody>
-                  <tr>
-                    <td><b>2020</b>  (Volume 3 Issue 1, Volume 3 Issue 2, Volume 3 Issue 3, Volume 3 Issue 4)</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <em>Editor-in-Chief </em>: Prof. Dr. Sukru Dursun<br/>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <em>Editorial Asistant </em>: Ms. Zeynep Cansu Ayturan<br/>
+                      <em>Editorial Asistant </em>: Dr. Zeynep Cansu Ayturan<br/>
                     </td>
                   </tr>
                   <tr>
@@ -403,7 +309,7 @@ const TeachersPage = () => {
                 <table className="tg" border="0">
                   <tbody>
                   <tr>
-                    <td><b>2022</b>  (Volume 5 Issue 1, Volume 5 Issue 2)</td>
+                    <td><b>2020</b>  (Volume 3 Issue 1, Volume 3 Issue 2, Volume 3 Issue 3, Volume 3 Issue 4)</td>
                   </tr>
                   <tr>
                     <td>
@@ -412,7 +318,7 @@ const TeachersPage = () => {
                   </tr>
                   <tr>
                     <td>
-                      <em>Editorial Asistant </em>: Dr. Zeynep Cansu Ayturan<br/>
+                      <em>Editorial Asistant </em>: Ms. Zeynep Cansu Ayturan<br/>
                     </td>
                   </tr>
                   <tr>
@@ -491,6 +397,194 @@ const TeachersPage = () => {
                   </tr>
                   </tbody>
                 </table>
+                <table className="tg" border="0">
+                  <tbody>
+                  <tr>
+                    <td><b>2019</b>  (Volume 2 Issue 1, Volume 2 Issue 2, Volume 2 Issue 4, Volume 2 Issue 5)</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <em>Editor-in-Chief </em>: Prof. Dr. Sukru Dursun<br/>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <em>Editorial Asistant </em>: Ms. Zeynep Cansu Ayturan<br/>
+                    </td>
+                  </tr>
+                  <tr>
+
+                    <td>
+                      <em>Other Editors </em>:
+                      Prof. Dr. Mustapha HASNAOUI
+                      ,
+                      Prof. Dr. Victor A.DRYBAN
+                      ,
+                      Prof. Dr. Amjad SHRAIM
+                      ,
+                      Prof. Dr. Stamatis ZOGARIS
+                      ,
+                      Prof. Dr. Scott S. KNIGHT
+                      ,
+                      Prof. Dr. Abdelbasset Bessadok-JEMAI
+                      ,
+                      Prof. Dr. IR. Raf DEWIL
+                      ,
+                      Dr. Somjai KARNCHANAWONG
+                      ,
+                      Prof. Dr. Houcine BENAÏSSA
+                      ,
+                      Dr. Hisham M. Alidrisi
+                      ,
+                      Prof. Dr. Chedly TIZAOUI
+                      ,
+                      Prof. Dr. Tarit Roychowdhury
+                      ,
+                      Prof. Dr. Umar HAMZAH
+                      ,
+                      Dr. Blerina Vrenozi
+                      ,
+                      Prof Dr. B. Zoran SAPURIK
+                      ,
+                      Prof. Dr Hab. Boguslaw BUSZEWSK
+                      ,
+                      Prof. Dr. Irena BARANOWSKA
+                      ,
+                      Prof. Dr. Nicola SENESI
+                      ,
+                      Prof. Dr. N. MODIRSHAHLA
+                      ,
+                      Prof.Dr. Rüdiger ANLAUF
+                      ,
+                      Prof. Dr. Leah MOORE
+                      ,
+                      Dr. Jacek D. Czerwinski
+                      ,
+                      Prof. Dr. Indumathi M NAMBI
+                      ,
+                      Prof. Dr Abdel-Moneim M. Galal Shaalan
+                      ,
+                      Prof. Dr. Tay Joo HWA
+                      ,
+                      Prof. Dr. Massimo ZUCCHETTI
+                      ,
+                      Prof. Dr. Mohammad SHAHRIARI
+                      ,
+                      Prof. Dr. Maris KLAVINS
+                      ,
+                      Prof. Dr. Hasan ARMAN
+                      ,
+                      Prof. Dr. Spase SHUMKA
+                      ,
+                      Dr. Florian KONGOLI
+                      ,
+                      Prof. Dr. Abdelbasset BESSADOK-JEMAI
+                      ,
+                      Prof. Dr. Fernardo SA Neves SANTOS
+                      ,
+                      Prof. Dr. Skender MUJI
+                      ,
+                      Prof. Dr. Hysen MANKOLLI
+                    </td>
+                  </tr>
+
+
+                  </tbody>
+                </table>
+                <table className="tg" border="0">
+                  <tbody>
+                  <tr>
+                    <td><b>2018</b>  (Volume 1 Issue 1, Volume 1 Issue 2, Volume 1 Issue 3, Volume 1 Issue 4)</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <em>Editor-in-Chief </em>: Prof. Dr. Sukru Dursun<br/>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <em>Editorial Asistant </em>: Ms. Zeynep Cansu Ayturan<br/>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <em>Other Editors </em>:
+                      Prof. Dr. Mustapha HASNAOUI
+                      ,
+                      Prof. Dr. Victor A.DRYBAN
+                      ,
+                      Prof. Dr. Amjad SHRAIM
+                      ,
+                      Prof. Dr. Stamatis ZOGARIS
+                      ,
+                      Prof. Dr. Scott S. KNIGHT
+                      ,
+                      Prof. Dr. Abdelbasset Bessadok-JEMAI
+                      ,
+                      Prof. Dr. IR. Raf DEWIL
+                      ,
+                      Dr. Somjai KARNCHANAWONG
+                      ,
+                      Prof. Dr. Houcine BENAÏSSA
+                      ,
+                      Dr. Hisham M. Alidrisi
+                      ,
+                      Prof. Dr. Chedly TIZAOUI
+                      ,
+                      Prof. Dr. Tarit Roychowdhury
+                      ,
+                      Prof. Dr. Umar HAMZAH
+                      ,
+                      Dr. Blerina Vrenozi
+                      ,
+                      Prof Dr. B. Zoran SAPURIK
+                      ,
+                      Prof. Dr Hab. Boguslaw BUSZEWSK
+                      ,
+                      Prof. Dr. Irena BARANOWSKA
+                      ,
+                      Prof. Dr. Nicola SENESI
+                      ,
+                      Prof. Dr. N. MODIRSHAHLA
+                      ,
+                      Prof.Dr. Rüdiger ANLAUF
+                      ,
+                      Prof. Dr. Leah MOORE
+                      ,
+                      Dr. Jacek D. Czerwinski
+                      ,
+                      Prof. Dr. Indumathi M NAMBI
+                      ,
+                      Prof. Dr Abdel-Moneim M. Galal Shaalan
+                      ,
+                      Prof. Dr. Tay Joo HWA
+                      ,
+                      Prof. Dr. Massimo ZUCCHETTI
+                      ,
+                      Prof. Dr. Mohammad SHAHRIARI
+                      ,
+                      Prof. Dr. Maris KLAVINS
+                      ,
+                      Prof. Dr. Hasan ARMAN
+                      ,
+                      Prof. Dr. Spase SHUMKA
+                      ,
+                      Dr. Florian KONGOLI
+                      ,
+                      Prof. Dr. Abdelbasset BESSADOK-JEMAI
+                      ,
+                      Prof. Dr. Fernardo SA Neves SANTOS
+                      ,
+                      Prof. Dr. Skender MUJI
+                      ,
+                      Prof. Dr. Hysen MANKOLLI
+                    </td>
+                  </tr>
+
+
+                  </tbody>
+                </table>
+
               </div>
             </div>
           </div>

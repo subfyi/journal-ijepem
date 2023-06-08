@@ -89,7 +89,7 @@ class NavOne extends Component {
                                     <Link href="/"><a>Homepage</a></Link>
                                 </li>
                                 <li>
-                                    <a href="/volumes/">Volumes</a>
+                                    <Link href="https://dergipark.org.tr/en/pub/ijepem/archive">Volumes</Link>
                                 </li>
                                 <li>
                                     <Link href="/editorial-team/"><a>Editorial Team</a></Link>

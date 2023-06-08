@@ -30,12 +30,10 @@ class AboutOne extends Component {
                             </a>
                         </div>
 
-                        <p className="about-one__text">IJEPEM (International Journal of Environmental Pollution and Environmental Modelling) is a leading journal for environmental researchers in several areas such as water pollution, wastewater pollution, air pollution, solid waste management, biotechnology, soil pollution, surface and groundwater, renewable energy, energy management, microbiology, sustainability, waste recovery and transformation, fuzzy logic, artificial neural networks.
-
-
+                        <p className="about-one__text">
+                            IJEPEM (International Journal of Environmental Pollution and Environmental Modelling) is a leading journal for environmental researchers in several areas such as water pollution, wastewater pollution, air pollution, solid waste management, biotechnology, soil pollution, surface and groundwater, renewable energy, energy management, microbiology, sustainability, waste recovery and transformation, fuzzy logic, artificial neural networks.
                             <br />
-                            Journal welcomes the high-quality papers. Original research papers, state-of-the-art reviews and high quality technical notes are invited for publication.
-
+                            Journal welcomes the high-quality papers. Original research papers, review papers and technical notes are invited for publication.
                         </p>
                         <a href="https://dergipark.org.tr/en/journal/2661/submission/step/manuscript/new" className="thm-btn about-one__btn">Send Paper</a>
                     </div>

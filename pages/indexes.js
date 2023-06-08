@@ -25,7 +25,16 @@ const TeachersPage = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      http://dergipark.gov.tr/ijepem
+                      http://dergipark.org.tr/ijepem
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                        href="https://scholar.google.com.tr/citations?user=enxkkBAAAAAJ"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                      https://scholar.google.com.tr/citations?user=enxkkBAAAAAJ
                     </a>
                   </li>
                   <li>
@@ -62,15 +71,6 @@ const TeachersPage = () => {
                       rel="noopener noreferrer"
                     >
                       http://road.issn.org/issn/2618-6128
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://scholar.google.com.tr/citations?user=enxkkBAAAAAJ"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      https://scholar.google.com.tr/citations?user=enxkkBAAAAAJ
                     </a>
                   </li>
                   <li>
