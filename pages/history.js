@@ -42,10 +42,7 @@ const TeachersPage = () => {
                   </tr>
                   <tr>
                     <td>
-                      <em>Editorial Asistant </em>: Dr. Zeynep Cansu Ayturan<br/>
-                    </td>
-                    <td>
-                      <em>Editorial Asistant </em>: Dr. Elif Göksu Öztürk<br/>
+                      <em>Editorial Asistant </em>: Dr. Zeynep Cansu Ayturan, Dr. Elif Göksu Öztürk<br/>
                     </td>
                   </tr>
                   <tr>

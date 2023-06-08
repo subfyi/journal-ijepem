@@ -17,6 +17,8 @@ const TeachersDetails = () => {
 
                             <p><strong>Dr. Zeynep Cansu AYTURAN</strong><br/>Environmental Engineering Department, Konya Technical University, Konya, TURKEY</p>
 
+                            <p><strong>Dr. Zeynep Cansu AYTURAN</strong><br/>Environmental Engineering Department, Konya Technical University, Konya, TURKEY</p>
+
                             <hr/>
                             <h3 className="team-details__subtitle">EDITORIAL BOARD</h3>
 
