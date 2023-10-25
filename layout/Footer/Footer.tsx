@@ -80,7 +80,7 @@ export default function Footer() {
                         <div className="site-footer__social">
                             <div onClick={scrollTop} className="scroll-to-target site-footer__scroll-top"><i
                                 className="fas fa-arrow-up"></i></div>
-                            <a target="_blank" href="https://www.facebook.com/ijepem"><i className="fab fa-facebook-square"></i></a>
+                            <a target="_blank" href="https://www.facebook.com/"><i className="fab fa-facebook-square"></i></a>
                             <a href="https://dergipark.org.tr/en/pub/ijepem/page/15703"><i className="fas fa-book"></i></a>
                             <a href="https://dergipark.org.tr/en/pub/ijepem/page/12117"><i className="fas fa-history"></i></a>
                         </div>
