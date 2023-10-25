@@ -93,42 +93,62 @@
     },
     {
       "source": "/volumes/",
-      "destination": "https://dergipark.org.tr/tr/pub/ijepem/issue/38456",
+      "destination": "https://dergipark.org.tr/en/pub/ijepem/archive",
       "permanent": true
     },
     {
       "source": "/volume/",
-      "destination": "https://dergipark.org.tr/tr/pub/ijepem/issue/38456",
+      "destination": "https://dergipark.org.tr/en/pub/ijepem/archive",
       "permanent": true
     },
     {
       "source": "/cilt/",
-      "destination": "/documents-all",
+      "destination": "https://dergipark.org.tr/en/pub/ijepem/archive",
       "permanent": true
     },
     {
       "source": "/ciltler/",
-      "destination": "https://dergipark.org.tr/tr/pub/ijepem/issue/38456",
+      "destination": "https://dergipark.org.tr/en/pub/ijepem/archive",
       "permanent": true
     },
     {
       "source": "/sayilar/",
-      "destination": "https://dergipark.org.tr/tr/pub/ijepem/issue/38456",
+      "destination": "https://dergipark.org.tr/en/pub/ijepem/archive",
       "permanent": true
     },
     {
       "source": "/issue/archive/",
-      "destination": "https://dergipark.org.tr/tr/pub/ijepem/issue/38456",
+      "destination": "https://dergipark.org.tr/en/pub/ijepem/archive",
       "permanent": true
     },
     {
-      "source": "/volume-1/issue-1/",
-      "destination": "https://dergipark.org.tr/en/pub/ijepem/issue/38466",
+      "source": "/volume-1/:path*",
+      "destination": "https://dergipark.org.tr/en/pub/ijepem/archive",
       "permanent": true
     },
     {
-      "source": "/volume-1/issue-1/article-1/",
-      "destination": "https://dergipark.org.tr/tr/pub/ijepem/issue/38456/445905",
+      "source": "/volume-2/:path*",
+      "destination": "https://dergipark.org.tr/en/pub/ijepem/archive",
+      "permanent": true
+    },
+    {
+      "source": "/volume-3/:path*",
+      "destination": "https://dergipark.org.tr/en/pub/ijepem/archive",
+      "permanent": true
+    },
+    {
+      "source": "/volume-4/:path*",
+      "destination": "https://dergipark.org.tr/en/pub/ijepem/archive",
+      "permanent": true
+    },
+    {
+      "source": "/volume-5/:path*",
+      "destination": "https://dergipark.org.tr/en/pub/ijepem/archive",
+      "permanent": true
+    },
+    {
+      "source": "/author/:path*",
+      "destination": "https://dergipark.org.tr/en/pub/ijepem",
       "permanent": true
     }
   ]
