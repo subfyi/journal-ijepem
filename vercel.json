@@ -32,6 +32,11 @@
       "permanent": true
     },
     {
+      "source": "/guide-for-authors/",
+      "destination": "https://dergipark.org.tr/en/pub/ijepem/writing-rules",
+      "permanent": true
+    },
+    {
       "source": "/ethics-statement/",
       "destination": "https://dergipark.org.tr/en/pub/ijepem/policy",
       "permanent": true
