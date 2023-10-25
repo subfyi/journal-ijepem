@@ -32,7 +32,7 @@ export default function Footer() {
                                         </li>
                                         <li>
 
-                                            <a href="/guide-for-authors" className="thm-btn">Guide for Authors</a>
+                                            <a href="https://dergipark.org.tr/en/pub/ijepem/writing-rules" className="thm-btn">Guide for Authors</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -53,7 +53,7 @@ export default function Footer() {
                                             <p>Yasin Akın Ayturan</p>
                                         </li>
                                         <li>
-                                            <a href="/ethics-statement" className="thm-btn"> Ethics and Malpractice Statement</a>
+                                            <a href="https://dergipark.org.tr/en/pub/ijepem/policy" className="thm-btn"> Ethics and Malpractice Statement</a>
                                         </li>
                                     </ul>
 
@@ -81,8 +81,8 @@ export default function Footer() {
                             <div onClick={scrollTop} className="scroll-to-target site-footer__scroll-top"><i
                                 className="fas fa-arrow-up"></i></div>
                             <a target="_blank" href="https://www.facebook.com/ijepem"><i className="fab fa-facebook-square"></i></a>
-                            <Link href="/indexes/"><i className="fas fa-book"></i></Link>
-                            <Link href="/history/"><i className="fas fa-history"></i></Link>
+                            <a href="https://dergipark.org.tr/en/pub/ijepem/page/15703"><i className="fas fa-book"></i></a>
+                            <a href="https://dergipark.org.tr/en/pub/ijepem/page/12117"><i className="fas fa-history"></i></a>
                         </div>
                     </div>
                 </div>

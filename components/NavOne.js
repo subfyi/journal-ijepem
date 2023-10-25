@@ -62,15 +62,15 @@ function NavOne() {
 
     return (
         <header className="site-header site-header__header-one ">
-            <nav className={`navbar navbar-expand-lg navbar-light header-navigation stricky ${sticky ? 'stricked-menu stricky-fixed' : ''}`}>
+            <nav className={`navbar navbar-expand-lg navbar-light header-navigation stricky `}>
                 <div className="container clearfix">
                     <div className="logo-box clearfix">
                         <Link href="/" className="navbar-brand">
                             <img src="/logo_black_500x500.png" className="main-logo" width="100" alt="IJEPEM" /> <h1>IJEPEM</h1>
                         </Link>
                         <div className="header__social">
-                            <Link href="/indexes/"><i className="fas fa-book"></i></Link>
-                            <Link href="/history/"><i className="fas fa-history"></i></Link>
+                            <a href="https://dergipark.org.tr/en/pub/ijepem/page/15703"><i className="fas fa-book"></i></a>
+                            <a href="https://dergipark.org.tr/en/pub/ijepem/page/12117"><i className="fas fa-history"></i></a>
                         </div>
                         <button className="menu-toggler">
                             <span className="kipso-icon-menu"></span>
@@ -85,10 +85,10 @@ function NavOne() {
                                 <a href="https://dergipark.org.tr/en/pub/ijepem/archive">Volumes</a>
                             </li>
                             <li>
-                                <Link href="/editorial-team/">Editorial Team</Link>
+                                <a href="https://dergipark.org.tr/en/pub/ijepem/board">Editorial Team</a>
                             </li>
                             <li>
-                                <Link href="/aim-and-scope/">Aim and Scope</Link>
+                                <a href="https://dergipark.org.tr/en/pub/ijepem/aim-and-scope">Aim and Scope</a>
                             </li>
                             <li>
                                 <Link href="/contact/">Contact</Link>

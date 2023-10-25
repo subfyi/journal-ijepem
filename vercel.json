@@ -18,12 +18,12 @@
     },
     {
       "source": "/editorial-board/",
-      "destination": "/editorial-team",
+      "destination": "https://dergipark.org.tr/en/pub/ijepem/board",
       "permanent": true
     },
     {
       "source": "/about/editorialTeam/",
-      "destination": "/editorial-team",
+      "destination": "https://dergipark.org.tr/en/pub/ijepem/board",
       "permanent": true
     },
     {
@@ -48,7 +48,7 @@
     },
     {
       "source": "/online-submission/",
-      "destination": "https://dergipark.org.tr/tr/journal/2662/submission/step/manuscript/new",
+      "destination": "https://dergipark.org.tr/tr/journal/2661/submission/step/manuscript/new",
       "permanent": true
     },
     {
@@ -63,78 +63,43 @@
     },
     {
       "source": "/volumes/",
-      "destination": "https://dergipark.org.tr/tr/pub/ucbad/issue/38456",
+      "destination": "https://dergipark.org.tr/tr/pub/ijepem/issue/38456",
       "permanent": true
     },
     {
       "source": "/volume/",
-      "destination": "https://dergipark.org.tr/tr/pub/ucbad/issue/38456",
+      "destination": "https://dergipark.org.tr/tr/pub/ijepem/issue/38456",
       "permanent": true
-    },
-    {
-      "source": "/ciltler/",
-      "destination": "https://dergipark.org.tr/tr/pub/ucbad/issue/38456",
-      "permanent": true
-    },
-    {
-      "source": "/sayilar/",
-      "destination": "https://dergipark.org.tr/tr/pub/ucbad/issue/38456",
-      "permanent": true
-    },
-    {
-      "source": "/issue/archive/",
-      "destination": "https://dergipark.org.tr/tr/pub/ucbad/issue/38456",
-      "permanent": true
-    },
-    {
-      "source": "/volume-1/issue-1/",
-      "destination": "https://dergipark.org.tr/tr/pub/ucbad/issue/38456",
-      "permanent": true
-    },
-    {
-      "source": "/volume-1/issue-1/article-1/",
-      "destination": "https://dergipark.org.tr/tr/pub/ucbad/issue/38456/445905",
-      "permanent": true
-    },
-    {
-      "source": "/doc/:path*",
-      "destination": "https://api.iseser.com/doc/:path*",
-      "statusCode": 301
-    },
-    {
-      "source": "/dok/:path*",
-      "destination": "https://api.iseser.com/doc/:path*",
-      "statusCode": 301
-    },
-    {
-      "source": "/ucbad/",
-      "destination": "https://ucbad.com/",
-      "statusCode": 301
-    },
-    {
-      "source": "/ijepem/",
-      "destination": "https://ijepem.com/",
-      "statusCode": 301
-    },
-    {
-      "source": "/iletisim/",
-      "destination": "/contact",
-      "statusCode": 301
     },
     {
       "source": "/cilt/",
       "destination": "/documents-all",
-      "statusCode": 301
+      "permanent": true
     },
     {
       "source": "/ciltler/",
-      "destination": "/documents-all",
-      "statusCode": 301
+      "destination": "https://dergipark.org.tr/tr/pub/ijepem/issue/38456",
+      "permanent": true
     },
     {
       "source": "/sayilar/",
-      "destination": "/documents-all",
-      "statusCode": 301
+      "destination": "https://dergipark.org.tr/tr/pub/ijepem/issue/38456",
+      "permanent": true
+    },
+    {
+      "source": "/issue/archive/",
+      "destination": "https://dergipark.org.tr/tr/pub/ijepem/issue/38456",
+      "permanent": true
+    },
+    {
+      "source": "/volume-1/issue-1/",
+      "destination": "https://dergipark.org.tr/en/pub/ijepem/issue/38466",
+      "permanent": true
+    },
+    {
+      "source": "/volume-1/issue-1/article-1/",
+      "destination": "https://dergipark.org.tr/tr/pub/ijepem/issue/38456/445905",
+      "permanent": true
     }
   ]
 }
