@@ -79,8 +79,8 @@ const Footer = () => {
               <div onClick={scrollTop} className="scroll-to-target site-footer__scroll-top"><i
                   className="fas fa-arrow-up"></i></div>
               <a target="_blank" href="https://www.facebook.com/ijepem"><i className="fab fa-facebook-square"></i></a>
-              <Link href="/indexes/"><a><i className="fas fa-book"></i></a></Link>
-              <Link href="/history/"><a><i className="fas fa-history"></i></a></Link>
+              <Link href="/indexes/"><i className="fas fa-book"></i></Link>
+              <Link href="/history/"><i className="fas fa-history"></i></Link>
             </div>
           </div>
         </div>

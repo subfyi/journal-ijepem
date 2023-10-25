@@ -1,0 +1,63 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'css/animate.min.css';
+@import 'css/style.css';
+@import 'css/responsive.css';
+@import 'swiper/css/swiper.css';
+
+a{
+  text-decoration: none;
+}
+
+.dashed {
+  border-bottom: 1px dotted #ddd;
+  border-color: #f60 !important;
+  width: fit-content;
+  padding-right: 5px;
+}
+
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.locationtabs {
+  margin-top: 20px !important;
+}
+
+.tab-content {
+  > .DayPicker {
+    margin: 0 auto;
+  }
+}
+
+.btn-primary {
+  background-color: rgba(229, 78, 22, 100%) !important;
+  border-color: rgba(229, 78, 22, 100%) !important;
+}
+
+.btn-outline-primary {
+  color: rgba(229, 78, 22, 100%) !important;
+  border-color: rgba(229, 78, 22, 100%) !important;
+}
+
+.btn:hover {
+  background-color: rgba(229, 78, 22, 100%) !important;
+  color: #fff !important;
+  border-color: rgba(229, 78, 22, 100%) !important;
+}
+
+.stick {
+  position: sticky;
+  top: 0;
+}
