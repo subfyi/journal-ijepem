@@ -17,6 +17,31 @@
       "permanent": true
     },
     {
+      "source": "/history/",
+      "destination": "https://dergipark.org.tr/en/pub/ijepem/page/12117",
+      "permanent": true
+    },
+    {
+      "source": "/indexes/",
+      "destination": "https://dergipark.org.tr/en/pub/ijepem/indexes",
+      "permanent": true
+    },
+    {
+      "source": "/aim-and-scope/",
+      "destination": "https://dergipark.org.tr/en/pub/ijepem/aim-and-scope",
+      "permanent": true
+    },
+    {
+      "source": "/ethics-statement/",
+      "destination": "https://dergipark.org.tr/en/pub/ijepem/policy",
+      "permanent": true
+    },
+    {
+      "source": "/editorial-team/",
+      "destination": "https://dergipark.org.tr/en/pub/ijepem/board",
+      "permanent": true
+    },
+    {
       "source": "/editorial-board/",
       "destination": "https://dergipark.org.tr/en/pub/ijepem/board",
       "permanent": true
