@@ -83,12 +83,12 @@
     },
     {
       "source": "/online-gonderi/",
-      "destination": "https://dergipark.org.tr/tr/journal/2662/submission/step/manuscript/new",
+      "destination": "https://dergipark.org.tr/tr/journal/2661/submission/step/manuscript/new",
       "permanent": true
     },
     {
       "source": "/about/submissions/",
-      "destination": "https://dergipark.org.tr/tr/journal/2662/submission/step/manuscript/new",
+      "destination": "https://dergipark.org.tr/tr/journal/2661/submission/step/manuscript/new",
       "permanent": true
     },
     {
