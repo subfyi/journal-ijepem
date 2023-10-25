@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 
-export function PageHeader(props) {
+export function PageHeader(props: { title: string }) {
   return (
       <section className="inner-banner">
         <div className="container">
