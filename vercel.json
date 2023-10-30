@@ -4,152 +4,152 @@
     {
       "source": "/iseser/",
       "destination": "https://iseser.com/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/ucbad/",
       "destination": "https://ucbad.com/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/ijepem/",
       "destination": "https://ijepem.com/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/history/",
       "destination": "https://dergipark.org.tr/en/pub/ijepem/page/12117",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/indexes/",
       "destination": "https://dergipark.org.tr/en/pub/ijepem/indexes",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/aim-and-scope/",
       "destination": "https://dergipark.org.tr/en/pub/ijepem/aim-and-scope",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/guide-for-authors/",
       "destination": "https://dergipark.org.tr/en/pub/ijepem/writing-rules",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/ethics-statement/",
       "destination": "https://dergipark.org.tr/en/pub/ijepem/policy",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/editorial-team/",
       "destination": "https://dergipark.org.tr/en/pub/ijepem/board",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/editorial-board/",
       "destination": "https://dergipark.org.tr/en/pub/ijepem/board",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/about/editorialTeam/",
       "destination": "https://dergipark.org.tr/en/pub/ijepem/board",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/publisher/",
       "destination": "/contact",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/iletisim/",
       "destination": "/contact",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/about/contact/",
       "destination": "/contact",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/about/",
       "destination": "/editorial-team",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/online-submission/",
       "destination": "https://dergipark.org.tr/tr/journal/2661/submission/step/manuscript/new",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/online-gonderi/",
       "destination": "https://dergipark.org.tr/tr/journal/2661/submission/step/manuscript/new",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/about/submissions/",
       "destination": "https://dergipark.org.tr/tr/journal/2661/submission/step/manuscript/new",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/volumes/",
       "destination": "https://dergipark.org.tr/en/pub/ijepem/archive",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/volume/",
       "destination": "https://dergipark.org.tr/en/pub/ijepem/archive",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/cilt/",
       "destination": "https://dergipark.org.tr/en/pub/ijepem/archive",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/ciltler/",
       "destination": "https://dergipark.org.tr/en/pub/ijepem/archive",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/sayilar/",
       "destination": "https://dergipark.org.tr/en/pub/ijepem/archive",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/issue/archive/",
       "destination": "https://dergipark.org.tr/en/pub/ijepem/archive",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/volume-1/:path*",
       "destination": "https://dergipark.org.tr/en/pub/ijepem/archive",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/volume-2/:path*",
       "destination": "https://dergipark.org.tr/en/pub/ijepem/archive",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/volume-3/:path*",
       "destination": "https://dergipark.org.tr/en/pub/ijepem/archive",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/volume-4/:path*",
       "destination": "https://dergipark.org.tr/en/pub/ijepem/archive",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/volume-5/:path*",
       "destination": "https://dergipark.org.tr/en/pub/ijepem/archive",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/author/:path*",
       "destination": "https://dergipark.org.tr/en/pub/ijepem",
-      "permanent": true
+      "statusCode": 301
     }
   ]
 }
