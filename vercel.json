@@ -2,6 +2,16 @@
   "version": 2,
   "redirects": [
     {
+      "source": "/doc/:path*",
+      "destination": "https://dergipark.org.tr/en/pub/ijepem/archive",
+      "statusCode": 301
+    },
+    {
+      "source": "/dok/:path*",
+      "destination": "https://dergipark.org.tr/en/pub/ijepem/archive",
+      "statusCode": 301
+    },
+    {
       "source": "/iseser/",
       "destination": "https://iseser.com/",
       "statusCode": 301
