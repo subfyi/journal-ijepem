@@ -46,7 +46,7 @@ export default function Footer() {
                                         </li>
                                         <li>
                                             <h2>Website</h2>
-                                            <p>https://ijepem.com</p>
+                                            <p>https://dergipark.org.tr/en/pub/ijepem</p>
                                         </li>
                                         <li>
                                             <h2>Publisher</h2>
