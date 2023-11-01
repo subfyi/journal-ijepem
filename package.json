@@ -10,11 +10,8 @@
   },
   "dependencies": {
     "@types/node": "20.5.6",
-    "@types/react": "18.2.21",
-    "@types/react-dom": "18.2.7",
-    "bootstrap": "^5.3.1",
-    "moment": "^2.29.4",
-    "next": "13.4.19",
+    "bootstrap": "^5.3.2",
+    "next": "14.0.1",
     "next-sitemap": "^4.2.3",
     "query-string": "^8.1.0",
     "react": "18.2.0",
@@ -23,16 +20,13 @@
     "react-dates": "^21.8.0",
     "react-dom": "18.2.0",
     "react-id-swiper": "^4.0.0",
-    "react-intl": "^6.4.7",
-    "react-phone-input-2": "^2.15.1",
-    "react-router-dom": "^6.16.0",
+    "react-intl": "^6.5.1",
+    "react-router-dom": "^6.18.0",
     "reactstrap": "^9.2.0",
-    "remixicon": "^3.5.0",
     "simple-react-validator": "^1.6.2",
-    "swiper": "^5.3.8",
     "typescript": "5.2.2"
   },
   "devDependencies": {
-    "sass": "^1.66.1"
+    "sass": "^1.69.5"
   }
 }
