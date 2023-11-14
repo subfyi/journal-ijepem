@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     env: {
-        ENDPOINT: 'https://api.ucbad.com',
+        ENDPOINT: 'https://api.iseser.com',
         DOMAIN: 'https://ijepem.com'
     },
     trailingSlash: true,
